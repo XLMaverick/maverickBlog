@@ -1,4 +1,5 @@
 baseurl = "/"
+publishDir = "docs"
 languageCode = "en-us"
 title = "Hugo Ivy"
 theme = "hugo-ivy"
