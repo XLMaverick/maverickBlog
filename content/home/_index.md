@@ -12,4 +12,4 @@ comments: false
 
 <script type="text/javascript" src="//ra.revolvermaps.com/0/0/1.js?i=0h6saubqjnp&amp;s=350&amp;m=7&amp;v=true&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000" async="async"></script>
 
-I've got you in my sights. 
+I've got you in my sights. （赤裸裸的抄袭了隔壁的老王）

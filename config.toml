@@ -18,7 +18,7 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
   adsenseSlotSticky = "XXX"             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
 
   # SEO configs
-  seotitle = "Hugo Blog Title (SEO Version)"
+  seotitle = "XLMverick - garabatear of yang"
   googleSiteVerification = "google_site_verification_code"    # Google Webmaster
   msValidate = "bing_site_verification_code"                  # Bing Webmaster
 
