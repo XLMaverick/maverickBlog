@@ -6,10 +6,32 @@
     <description>Recent content on XLMaverick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xlmaverick.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>视觉作业-1</title>
+      <link>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</guid>
+      <description>背景 本学期，由于邹老师开设视觉定位的课程，我们组的大部分人基本每节课都在听，本次课程邹老师总共会设置六次大作业，应该难度不会很大。既然来上课了，所以就把相关的作业也做了。具体的代码和课件，我会放到自己的github上面：https://github.com/XLMaverick/Visual-Localization-Percessing-Homework；
+第一次作业是Histogram Specialization，是图像处理中基本的操作了，要求是不能使用相关的函数库，具体的要求和代码如下所示：
+作业要求 Write a small program to implement a histogram specialization algorithm.
+ Consider two brightness mapping functions transform both histograms into a constant histogram:  {:height=&amp;ldquo;50%&amp;rdquo; width=&amp;ldquo;50%&amp;rdquo;}
+ Algorithm:
+  代码说明 工程共实现了三种功能，直方图均衡化、直方图特例化和显示直方图。分别对应的函数为：
+cv::Mat histogram_specilalization(cv::Mat srcImage, cv::Mat dstImage)；
+cv::Mat histogram_equalization(cv::Mat srcImage)；
+void histogram_show(cv::Mat srcImage)。
+具体的实现思路如上述的算法所示。
+代码运行方法为： cd build
+cmake ..
+make
+./Histogram_specialization</description>
+    </item>
     
     <item>
       <title>相机模型与标定</title>
