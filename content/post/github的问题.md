@@ -3,7 +3,6 @@ title: "github的问题"
 date: 2018-09-13T20:58:50+00:00
 draft: false
 type: "post"
-comments: true
 # cover: "/img/cover.jpg"
 ---
 
