@@ -9,7 +9,6 @@
     <article class="post-content">{{ .Content }}</article>
     <footer class="post-footer">
       {{ if isset .Params "tags" }}
-      {{ partial "comments.html" . }}
       <ul class="post-tags">
         {{ range $tag := .Params.tags }}
           <li class="post-tag"><a href="/tags/{{ $tag | urlize }}"><span class="tag">{{ $tag | title }}</span></a></li>
@@ -22,6 +21,7 @@
         <a class="share share-google" target="_blank" href="https://plus.google.com/share?url={{ .Title }}&amp;url={{ .Permalink }}" title="Share on Google+"></a>
       </div>
     </footer>
+  {{ partial "comments.html" . }}
   </section>
   {{ partial "footer.html" . }}
  
