@@ -212,36 +212,6 @@ make
       
         <article class="entry-single">
   
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/" title="github的问题" class="entry-link">github的问题</a></h3>
-  </header>
-
-  <p class="entry-summary"> git 提交github后文件夹为灰颜色问题
-因为使用git clone 之后，文件夹里面会包含原来相关的信息，所以重新push之后会显示灰颜色。解决方案：
-* 删除clone的代码里面的.git和.gitignore文件，重新push。
-* 若上述方法无效时，是因为已经有了缓存，需要先将缓存删除
-git rm -r –cached some-directory
- git提交空文件夹
-在空目录下创建.gitkeep文件。
- push 每次需要输入用户名和密码的问题
-每次都需要输入用户名和密码是因为你采用的是 https 方式提交代码， 如果采用的是 ssh 方式只需要在版本库中添加用户的 sha 的key就可以实现提交时无需输入用户名和密码。
-可以在更改配置HTTPS地址为SSH地址，当然也可以通过设置git的cache，可以让它记住密码，之后自己设置一个cache有效时间 这样也一定程度保证了一些安全性，具体代码如下
-git config –global credential.helper cache
-git config –global credential.helper ‘cache –timeout=3600’
-  </p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Sep 13, 2018</span> 1 min read</p>
-    <div class="sharing">
-      <a class="share share-facebook" target="_blank" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fxlmaverick.me%2fpost%2fgithub%25E7%259A%2584%25E9%2597%25AE%25E9%25A2%2598%2f" title="Share on Facebook"></a>
-      <a class="share share-twitter" target="_blank" href="https://twitter.com/intent/tweet/?text=github%e7%9a%84%e9%97%ae%e9%a2%98&amp;url=https%3a%2f%2fxlmaverick.me%2fpost%2fgithub%25E7%259A%2584%25E9%2597%25AE%25E9%25A2%2598%2f" title="Share on Twitter"></a>
-      <a class="share share-google" target="_blank" href="https://plus.google.com/share?url=github%e7%9a%84%e9%97%ae%e9%a2%98&amp;url=https%3a%2f%2fxlmaverick.me%2fpost%2fgithub%25E7%259A%2584%25E9%2597%25AE%25E9%25A2%2598%2f" title="Share on Google+"></a>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
     <a href="https://xlmaverick.me/post/%E5%86%99%E5%9C%A8%E5%8D%9A%E5%AE%A2%E8%BE%B9%E4%B8%8A/" title="写在博客边上">
       <amp-img alt="写在博客边上"
         height="244"
