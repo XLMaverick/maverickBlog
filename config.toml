@@ -27,7 +27,7 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 
   # Social networks
   email = "yangxl0319@163.com"
-  github = "/XLMaverick"
+  github = "https://github.com/XLMaverick"
   # twitter = "twitter_username"
   # linkedin = "linkedin_username"
   # facebook = "facebook_username"
@@ -36,8 +36,6 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
   # youtube = "youtube_username"
   # dribbble = "dribbble_username"
   # wechat= "/img/weixinqcode.jpeg"
-
-disqusShortname = "yangxinglong"
 
 [taxonomies]
   tag = "tags"
