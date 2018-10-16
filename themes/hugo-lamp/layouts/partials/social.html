@@ -1,5 +1,6 @@
 <ul class="social-list">
   {{ if isset .Site.Params "email" }}
+  {{ partial "comments.html" . }}
   <li class="social-item">
     <a href="mailto:{{ .Site.Params.email }}" title="Email"><span class="icon icon-email"></span></a>
   </li>{{ end }}
