@@ -7,7 +7,7 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 
 
 
-disqusShortname = "yangxinglong"
+
 [params]
   subtitle = "凡心所向 素履所往"
   author = "杨兴隆"
@@ -36,6 +36,8 @@ disqusShortname = "yangxinglong"
   # youtube = "youtube_username"
   # dribbble = "dribbble_username"
   # wechat= "/img/weixinqcode.jpeg"
+
+disqusShortname = "yangxinglong"
 
 [taxonomies]
   tag = "tags"
