@@ -1,0 +1,51 @@
+---
+title: "just_coding_2"
+date: 2018-12-26T20:58:50+00:00
+draft: false
+type: "post"
+# cover: "/img/cover.jpg"
+---
+
+# string vector array  
+## string 
+1、using的声明最好不要放到头文件中，因为很多地方包含头文件，容易造成命名空间冲突。  
+2、string对象会自动忽略开头处的空白，从第一个字符读起，直到遇到下一处的空白结束。  
+3、string中getline()函数除外，如果开头有换行符，则直接返回，不会忽略开头处的空白。  
+4、string标准库中的size函数，返回的为string::size_type类型的值，该类型的值为无符号的类型，所以使用尤其注意和有符号的变量运算时，有符号的变量会变为无符号的数据，在for和if中很容易出错。  
+5、string对象相加，必须确保+号的两端至少有一个string，直接的字符串是不能够直接相加的。  
+6、范围for语句：  
+`string s;
+for（auto c: s)`  
+使用范围for可以方便遍历string 和vector，同时可以避免string的下标超过范围。  
+7、无论什么时候使用下标，一定要检查其合法性：  
+A：下标的类型，可以使用decltype和auto；
+B：下标是否超过范围；
+C：下标是否可以使用；（空的vector和string尤其注意）  
+8、string是c++的标准库，就想定义了大家共同使用的类，所以有一些大家都可以方便使用的类中的方法，举一个例子：  
+`string s("some string");`  
+`for (decltype(s.size()) index=0; index != s.size() && !isspace(s[index]); ++index)`  
+`{`  
+        `s[index] = toupper(s[index]);`  
+`}`  
+`cout<<s<<endl;`  
+这个例子主要说明C++中封装的思想和编码的风格。  
+## vector
+1、vector是模板不是类型，所以vector容纳的为对象，引用不是对象，所以不存在包含引用的vector。  
+2、vector列表初始化时，主要看花括号和圆括号，以及类型：  
+`vector<int> v1(10）`  
+`vector<int> v2{10}`  
+`vector<int> v3(10,1)`  
+`vector<int> v4{10,1}`  
+注意区分上述表达式的不同；  
+`vector(string) s1{"hi"}`  
+`vector(string) s2("hi")//错误`  
+`vector(string) s3{10}`  
+`vector(string) s4{10,"hi"}`  
+3、向vector中添加元素，一般是定义一个空的vector，然后使用push_bsck函数进行添加，这时候是不能使用下标进行赋值的，因为此时是空的vector，不存在下标，添加元素后，可以使用下标进行访问。这种情况经常使用在未知数据数量的时候经常使用。  
+4、向vector中添加元素，必须要确保所写的循环正确无误，尤其是循环可能要改变vector对象容量的时候。（如果循环体内部包含向vector对象添加元素的语句，则不能使用范围for循环，因为范围for循环会预知end的位置）。  
+5、string和vector大小的比较，均遵循两个原则：  
+A：两个对象的容量不同，但相同位置的元素均相同，则容量大的对象大；  
+B：两个对象的元素值不同，则第一对不同的元素值决定大小关系。  
+6、string和vector有一个区别就是cout打印的区别，string可以直接的使用cout打印出所有的，但是vector是不可以是直接使用cout的，需要使用for或者范围for来cout打印出每一个元素（注意下标问题）。  
+
+
