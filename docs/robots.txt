@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://xlmaverick.me/sitemap.xml
+Sitemap: https://xlmaverick.me/sitemap.xml
