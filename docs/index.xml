@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>XLMaverick - garabatear of yang</title>
-    <link>https://xlmaverick.me/</link>
+    <link>http://xlmaverick.me/</link>
     <description>Recent content on XLMaverick - garabatear of yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 20 Aug 2018 21:38:52 +0800</lastBuildDate>
     
-        <atom:link href="https://xlmaverick.me/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://xlmaverick.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关于</title>
-      <link>https://xlmaverick.me/about/</link>
+      <link>http://xlmaverick.me/about/</link>
       <pubDate>Mon, 20 Aug 2018 21:38:52 +0800</pubDate>
       
-      <guid>https://xlmaverick.me/about/</guid>
+      <guid>http://xlmaverick.me/about/</guid>
       
         <description>
 
@@ -32,7 +32,7 @@
 
 &lt;p&gt;1.请问如何订阅这个博客？&lt;/p&gt;
 
-&lt;p&gt;回答： &lt;a href=&#34;https://xlmaverick.me/post/2018/07/07/rss添加/&#34;&gt;可参看这篇博客&lt;/a&gt;，需要利用RSS阅读器。&lt;/p&gt;
+&lt;p&gt;回答： &lt;a href=&#34;http://xlmaverick.me/post/2018/07/07/rss添加/&#34;&gt;可参看这篇博客&lt;/a&gt;，需要利用RSS阅读器。&lt;/p&gt;
 
 &lt;h2 id=&#34;友情链接&#34;&gt;友情链接　　　　　　　　　　　　&lt;/h2&gt;
 
@@ -46,10 +46,10 @@
     
     <item>
       <title>终食之言--电影春节档</title>
-      <link>https://xlmaverick.me/post/%E7%BB%88%E9%A3%9F%E4%B9%8B%E8%A8%80--%E7%94%B5%E5%BD%B1%E6%98%A5%E8%8A%82%E6%A1%A3/</link>
+      <link>http://xlmaverick.me/post/%E7%BB%88%E9%A3%9F%E4%B9%8B%E8%A8%80--%E7%94%B5%E5%BD%B1%E6%98%A5%E8%8A%82%E6%A1%A3/</link>
       <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/post/%E7%BB%88%E9%A3%9F%E4%B9%8B%E8%A8%80--%E7%94%B5%E5%BD%B1%E6%98%A5%E8%8A%82%E6%A1%A3/</guid>
+      <guid>http://xlmaverick.me/post/%E7%BB%88%E9%A3%9F%E4%B9%8B%E8%A8%80--%E7%94%B5%E5%BD%B1%E6%98%A5%E8%8A%82%E6%A1%A3/</guid>
       
         <description>&lt;p&gt;过年总得有消遣，一群人尬聊，找话题也是件头疼的事，所以啊，有些人一起吃饭，有些人打麻将，诚然，打麻将得需要加赌注，吃饭需要喝酒，总有一个办法调动气氛，打开人的话匣子。后来，感谢党，感谢国家，感谢那一路飙升的GDP，在满足人们日益增长的物质需求的同时，最终没有忘记人们日益增长的文化需求，当然，最终还得靠资本驱动，这几年电影行业的蒸蒸日上，有人名利双收的同时，人们也终于找到了一个不用尬聊，时间也很长，而且参与人员众多的活动，看电影，合大欢喜。&lt;br /&gt;
 短短的这几天，流浪地球、疯狂的外星人、飞驰人生，总之大家觉得优秀的片子都随着朋友看着差不多。疯狂外星人中规中矩吧，期待和收获大家都懂。流浪地球，只有一个瑕点，比较讨厌刘启和韩朵朵，每次看到他总想冲上去打他一顿的错觉，难道是年纪大了？总感觉他就是那衬衫上的白米粒,墙上的一抹蚊子血。唉，还是很期待有一天能看到三体也能搬上大屏幕，或者像鬼吹灯一样，做成优质的网剧。最出人意料的还是飞驰人生吧，韩寒还是那一个勇敢无畏的韩寒，我们这一代人，看着他的书，听着他故事的普通人，在这个不三不四的年纪，人五人六的活着，却做着杂七杂八的琐事，很多人谈不上热爱，也谈不上厌恶，却总有一个理由维持着这种状态，还有一些人至今也没找到自己热爱什么啊。&lt;/p&gt;
@@ -59,10 +59,10 @@
     
     <item>
       <title>C&#43;&#43;基础知识--变量和基本类型2</title>
-      <link>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B2/</link>
+      <link>http://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B2/</link>
       <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B2/</guid>
+      <guid>http://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B2/</guid>
       
         <description>
 
@@ -132,10 +132,10 @@ B：两个对象的元素值不同，则第一对不同的元素值决定大小�
     
     <item>
       <title>C&#43;&#43;基础知识--变量和基本类型1</title>
-      <link>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B1/</link>
+      <link>http://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B1/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B1/</guid>
+      <guid>http://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B1/</guid>
       
         <description>
 
@@ -245,10 +245,10 @@ p3 = &amp;amp;p;//p3引用了一个指针，因此可以将地址赋给p3
     
     <item>
       <title>视觉作业-1</title>
-      <link>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</link>
+      <link>http://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</guid>
+      <guid>http://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</guid>
       
         <description>
 
@@ -292,10 +292,10 @@ make&lt;br /&gt;
     
     <item>
       <title>相机模型与标定</title>
-      <link>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</link>
+      <link>http://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</guid>
+      <guid>http://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</guid>
       
         <description>
 
@@ -327,10 +327,10 @@ make&lt;br /&gt;
     
     <item>
       <title>github的问题</title>
-      <link>https://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <link>http://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</link>
       <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <guid>http://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
       
         <description>&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;git 提交github后文件夹为灰颜色问题&lt;br /&gt;
@@ -354,10 +354,10 @@ git config &amp;ndash;global credential.helper &amp;lsquo;cache &amp;ndash;timeo
     
     <item>
       <title>写在博客边上</title>
-      <link>https://xlmaverick.me/post/%E5%86%99%E5%9C%A8%E5%8D%9A%E5%AE%A2%E8%BE%B9%E4%B8%8A/</link>
+      <link>http://xlmaverick.me/post/%E5%86%99%E5%9C%A8%E5%8D%9A%E5%AE%A2%E8%BE%B9%E4%B8%8A/</link>
       <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/post/%E5%86%99%E5%9C%A8%E5%8D%9A%E5%AE%A2%E8%BE%B9%E4%B8%8A/</guid>
+      <guid>http://xlmaverick.me/post/%E5%86%99%E5%9C%A8%E5%8D%9A%E5%AE%A2%E8%BE%B9%E4%B8%8A/</guid>
       
         <description>&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;关于这个博客的起因是随机的，关于这个博客的过程是曲折的，关于这个博客的结果，只能是看缘分了。前前后后，断断续续，中间因为比赛的原因暂停、因为论文的原因暂停，幸得朱一帆同学的再三帮忙，终究是还是建立完善起来了，由于一些特殊的原因，很多的经历未曾完善，姑且这样吧。&lt;/p&gt;
 

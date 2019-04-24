@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on XLMaverick - garabatear of yang</title>
-    <link>https://xlmaverick.me/tags/</link>
+    <link>http://xlmaverick.me/tags/</link>
     <description>Recent content in Tags on XLMaverick - garabatear of yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 10 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xlmaverick.me/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xlmaverick.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://xlmaverick.me/tags/</link>
+      <link>http://xlmaverick.me/tags/</link>
       <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/tags/</guid>
+      <guid>http://xlmaverick.me/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C&#43;&#43;</title>
-      <link>https://xlmaverick.me/tags/c&#43;&#43;/</link>
+      <link>http://xlmaverick.me/tags/c&#43;&#43;/</link>
       <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/tags/c&#43;&#43;/</guid>
+      <guid>http://xlmaverick.me/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://xlmaverick.me/tags/git/</link>
+      <link>http://xlmaverick.me/tags/git/</link>
       <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/tags/git/</guid>
+      <guid>http://xlmaverick.me/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Slam</title>
-      <link>https://xlmaverick.me/tags/slam/</link>
+      <link>http://xlmaverick.me/tags/slam/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/tags/slam/</guid>
+      <guid>http://xlmaverick.me/tags/slam/</guid>
       <description></description>
     </item>
     
