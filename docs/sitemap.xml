@@ -1,141 +1,141 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<?xml-stylesheet type="text/xsl" href="http://xlmaverick.me/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://www.xlmaverick.me/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://xlmaverick.me/about/</loc>
+    <loc>https://www.xlmaverick.me/about/</loc>
     <lastmod>2018-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/post/%E7%BB%88%E9%A3%9F%E4%B9%8B%E8%A8%80--%E7%94%B5%E5%BD%B1%E6%98%A5%E8%8A%82%E6%A1%A3/</loc>
+    <loc>https://www.xlmaverick.me/post/%E7%BB%88%E9%A3%9F%E4%B9%8B%E8%A8%80--%E7%94%B5%E5%BD%B1%E6%98%A5%E8%8A%82%E6%A1%A3/</loc>
     <lastmod>2019-02-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B2/</loc>
+    <loc>https://www.xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B2/</loc>
     <lastmod>2018-12-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B1/</loc>
+    <loc>https://www.xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B1/</loc>
     <lastmod>2018-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</loc>
+    <loc>https://www.xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</loc>
     <lastmod>2018-10-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</loc>
+    <loc>https://www.xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://www.xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2018-09-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/post/%E5%86%99%E5%9C%A8%E5%8D%9A%E5%AE%A2%E8%BE%B9%E4%B8%8A/</loc>
+    <loc>https://www.xlmaverick.me/post/%E5%86%99%E5%9C%A8%E5%8D%9A%E5%AE%A2%E8%BE%B9%E4%B8%8A/</loc>
     <lastmod>2018-09-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/tags/</loc>
+    <loc>https://www.xlmaverick.me/tags/</loc>
     <lastmod>2019-02-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/tags/c&#43;&#43;/</loc>
+    <loc>https://www.xlmaverick.me/tags/c&#43;&#43;/</loc>
     <lastmod>2018-12-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/categories/</loc>
+    <loc>https://www.xlmaverick.me/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/categories/coding/</loc>
+    <loc>https://www.xlmaverick.me/categories/coding/</loc>
     <lastmod>2018-12-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/tags/git/</loc>
+    <loc>https://www.xlmaverick.me/tags/git/</loc>
     <lastmod>2018-09-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/categories/others/</loc>
+    <loc>https://www.xlmaverick.me/categories/others/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/post/</loc>
+    <loc>https://www.xlmaverick.me/post/</loc>
     <lastmod>2019-02-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/tags/slam/</loc>
+    <loc>https://www.xlmaverick.me/tags/slam/</loc>
     <lastmod>2018-10-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/categories/slam/</loc>
+    <loc>https://www.xlmaverick.me/categories/slam/</loc>
     <lastmod>2018-10-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/tags/</loc>
+    <loc>https://www.xlmaverick.me/tags/</loc>
     <lastmod>2019-02-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/</loc>
+    <loc>https://www.xlmaverick.me/</loc>
     <lastmod>2018-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlmaverick.me/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <loc>https://www.xlmaverick.me/categories/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2019-02-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>

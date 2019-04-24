@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Others on XLMaverick - garabatear of yang</title>
-    <link>http://xlmaverick.me/categories/others/</link>
+    <link>https://www.xlmaverick.me/categories/others/</link>
     <description>Recent content in Others on XLMaverick - garabatear of yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://xlmaverick.me/categories/others/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xlmaverick.me/categories/others/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>相机模型与标定</title>
-      <link>http://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</link>
+      <link>https://www.xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</guid>
+      <guid>https://www.xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</guid>
       <description>由于近期使用了很多种不同的相机，关于相机的模型和标定方法也是老生常谈的问题，这也是视觉定位的必要前提，本文只要分为三个部分：坐标系的转换、相</description>
     </item>
     
     <item>
       <title>github的问题</title>
-      <link>http://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <link>https://www.xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</link>
       <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://www.xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
       <description>git 提交github后文件夹为灰颜色问题 因为使用git clone 之后，文件夹里面会包含原来相关的信息，所以重新push之后会显示灰颜色。解决方案： * 删</description>
     </item>
     
