@@ -6,7 +6,7 @@
     <description>Recent content on XLMaverick - garabatear of yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Aug 2018 21:38:52 +0800</lastBuildDate>
     
         <atom:link href="https://xlmaverick.me/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>关于</title>
       <link>https://xlmaverick.me/about/</link>
-      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      <pubDate>Mon, 20 Aug 2018 21:38:52 +0800</pubDate>
       
       <guid>https://xlmaverick.me/about/</guid>
       
@@ -24,7 +24,7 @@
 
 &lt;p&gt;本站目前采用&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;作为后台系统，并且使用&lt;a href=&#34;https://www.netlify.com/&#34;&gt;Netlify&lt;/a&gt;进行部署。&lt;/p&gt;
 
-&lt;p&gt;博客的主题模板是从Hugo官方网站上面&lt;a href=&#34;https://github.com/huyb1991/hugo-lamp&#34;&gt;下载&lt;/a&gt;的，在主页的搭建过程中，参考了同实验室朱一帆、王兆胜的博客，同时友情链接里面相关的链接。&lt;/p&gt;
+&lt;p&gt;博客的主题模板是从Hugo官方网站上面&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even&#34;&gt;下载&lt;/a&gt;的，在主页的搭建过程中，参考了同实验室朱一帆、王兆圣的博客，同时友情链接里面相关的链接。&lt;/p&gt;
 
 &lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;/h2&gt;
 
@@ -40,19 +40,6 @@
 &lt;li&gt;&lt;a href=&#34;http://www.aintk.xyz/&#34;&gt;&lt;strong&gt;隔壁老王&lt;/strong&gt;&lt;/a&gt; 　　　&lt;a href=&#34;https://www.drifter.fun/&#34;&gt;&lt;strong&gt;喜提宝马的朱总&lt;/strong&gt;&lt;/a&gt; 　　　&lt;a href=&#34;https://www.bloodbaby.tech/&#34;&gt;&lt;strong&gt;十亩之间&lt;/strong&gt;&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://yihui.name/&#34;&gt;&lt;strong&gt;谢益辉的独立博客&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
-
-&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
       
     </item>
@@ -60,7 +47,7 @@
     <item>
       <title>终食之言--电影春节档</title>
       <link>https://xlmaverick.me/post/%E7%BB%88%E9%A3%9F%E4%B9%8B%E8%A8%80--%E7%94%B5%E5%BD%B1%E6%98%A5%E8%8A%82%E6%A1%A3/</link>
-      <pubDate>Sun, 10 Feb 2019 10:58:50 +0000</pubDate>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xlmaverick.me/post/%E7%BB%88%E9%A3%9F%E4%B9%8B%E8%A8%80--%E7%94%B5%E5%BD%B1%E6%98%A5%E8%8A%82%E6%A1%A3/</guid>
       
@@ -71,17 +58,17 @@
     </item>
     
     <item>
-      <title>just_coding_2</title>
-      <link>https://xlmaverick.me/post/just_coding_2/</link>
-      <pubDate>Wed, 26 Dec 2018 20:58:50 +0000</pubDate>
+      <title>C&#43;&#43;基础知识--变量和基本类型2</title>
+      <link>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B2/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/post/just_coding_2/</guid>
+      <guid>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B2/</guid>
       
         <description>
 
-&lt;h1 id=&#34;string-vector-array&#34;&gt;string vector array&lt;/h1&gt;
+&lt;h2 id=&#34;string-vector-array&#34;&gt;string vector array&lt;/h2&gt;
 
-&lt;h2 id=&#34;string&#34;&gt;string&lt;/h2&gt;
+&lt;h3 id=&#34;string&#34;&gt;string&lt;/h3&gt;
 
 &lt;p&gt;1、using的声明最好不要放到头文件中，因为很多地方包含头文件，容易造成命名空间冲突。&lt;br /&gt;
 2、string对象会自动忽略开头处的空白，从第一个字符读起，直到遇到下一处的空白结束。&lt;br /&gt;
@@ -92,122 +79,166 @@
 &lt;code&gt;string s;
 for（auto c: s)&lt;/code&gt;&lt;br /&gt;
 使用范围for可以方便遍历string 和vector，同时可以避免string的下标超过范围。&lt;br /&gt;
-7、无论什么时候使用下标，一定要检查其合法性：&lt;br /&gt;
-A：下标的类型，可以使用decltype和auto；
-B：下标是否超过范围；
-C：下标是否可以使用；（空的vector和string尤其注意）&lt;br /&gt;
-8、string是c++的标准库，就想定义了大家共同使用的类，所以有一些大家都可以方便使用的类中的方法，举一个例子：&lt;br /&gt;
-&lt;code&gt;string s(&amp;quot;some string&amp;quot;);&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;for (decltype(s.size()) index=0; index != s.size() &amp;amp;&amp;amp; !isspace(s[index]); ++index)&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;{&lt;/code&gt;&lt;br /&gt;
-        &lt;code&gt;s[index] = toupper(s[index]);&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;}&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;cout&amp;lt;&amp;lt;s&amp;lt;&amp;lt;endl;&lt;/code&gt;&lt;br /&gt;
-这个例子主要说明C++中封装的思想和编码的风格。&lt;/p&gt;
+7、无论什么时候使用下标，一定要检查其合法性：&lt;/p&gt;
 
-&lt;h2 id=&#34;vector&#34;&gt;vector&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;A：下标的类型，可以使用decltype和auto；
+B：下标是否超过范围；
+C：下标是否可以使用；（空的vector和string尤其注意）  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;8、string是c++的标准库，就想定义了大家共同使用的类，所以有一些大家都可以方便使用的类中的方法，举一个例子：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;string s(&amp;quot;some string&amp;quot;);  
+for (decltype(s.size()) index=0; index != s.size() &amp;amp;&amp;amp; !isspace(s[index]); ++index)  
+{  
+    s[index] = toupper(s[index]); 
+}  
+cout&amp;lt;&amp;lt;s&amp;lt;&amp;lt;endl;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这个例子主要说明C++中封装的思想和编码的风格。&lt;/p&gt;
+
+&lt;h3 id=&#34;vector&#34;&gt;vector&lt;/h3&gt;
 
 &lt;p&gt;1、vector是模板不是类型，所以vector容纳的为对象，引用不是对象，所以不存在包含引用的vector。&lt;br /&gt;
-2、vector列表初始化时，主要看花括号和圆括号，以及类型：&lt;br /&gt;
-&lt;code&gt;vector&amp;lt;int&amp;gt; v1(10）&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;vector&amp;lt;int&amp;gt; v2{10}&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;vector&amp;lt;int&amp;gt; v3(10,1)&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;vector&amp;lt;int&amp;gt; v4{10,1}&lt;/code&gt;&lt;br /&gt;
-注意区分上述表达式的不同；&lt;br /&gt;
-&lt;code&gt;vector(string) s1{&amp;quot;hi&amp;quot;}&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;vector(string) s2(&amp;quot;hi&amp;quot;)//错误&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;vector(string) s3{10}&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;vector(string) s4{10,&amp;quot;hi&amp;quot;}&lt;/code&gt;&lt;br /&gt;
-3、向vector中添加元素，一般是定义一个空的vector，然后使用push_bsck函数进行添加，这时候是不能使用下标进行赋值的，因为此时是空的vector，不存在下标，添加元素后，可以使用下标进行访问。这种情况经常使用在未知数据数量的时候经常使用。&lt;br /&gt;
+2、vector列表初始化时，主要看花括号和圆括号，以及类型：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vector&amp;lt;int&amp;gt; v1(10)
+vector&amp;lt;int&amp;gt; v2{10}
+vector&amp;lt;int&amp;gt; v3(10,1)
+vector&amp;lt;int&amp;gt; v4{10,1}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注意区分上述表达式的不同；&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vector(string) s1{&amp;quot;hi&amp;quot;}
+vector(string) s2(&amp;quot;hi&amp;quot;)//错误
+vector(string) s3{10} 
+vector(string) s4{10,&amp;quot;hi&amp;quot;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3、向vector中添加元素，一般是定义一个空的vector，然后使用push_bsck函数进行添加，这时候是不能使用下标进行赋值的，因为此时是空的vector，不存在下标，添加元素后，可以使用下标进行访问。这种情况经常使用在未知数据数量的时候经常使用。&lt;br /&gt;
 4、向vector中添加元素，必须要确保所写的循环正确无误，尤其是循环可能要改变vector对象容量的时候。（如果循环体内部包含向vector对象添加元素的语句，则不能使用范围for循环，因为范围for循环会预知end的位置）。&lt;br /&gt;
-5、string和vector大小的比较，均遵循两个原则：&lt;br /&gt;
-A：两个对象的容量不同，但相同位置的元素均相同，则容量大的对象大；&lt;br /&gt;
-B：两个对象的元素值不同，则第一对不同的元素值决定大小关系。&lt;br /&gt;
-6、string和vector有一个区别就是cout打印的区别，string可以直接的使用cout打印出所有的，但是vector是不可以是直接使用cout的，需要使用for或者范围for来cout打印出每一个元素（注意下标问题）。&lt;/p&gt;
+5、string和vector大小的比较，均遵循两个原则：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;A：两个对象的容量不同，但相同位置的元素均相同，则容量大的对象大；  
+B：两个对象的元素值不同，则第一对不同的元素值决定大小关系。  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;6、string和vector有一个区别就是cout打印的区别，string可以直接的使用cout打印出所有的，但是vector是不可以是直接使用cout的，需要使用for或者范围for来cout打印出每一个元素（注意下标问题）。&lt;/p&gt;
 </description>
       
     </item>
     
     <item>
-      <title>just_coding_1</title>
-      <link>https://xlmaverick.me/post/just_coding_1/</link>
-      <pubDate>Thu, 20 Dec 2018 20:58:50 +0000</pubDate>
+      <title>C&#43;&#43;基础知识--变量和基本类型1</title>
+      <link>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B1/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xlmaverick.me/post/just_coding_1/</guid>
+      <guid>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B1/</guid>
       
         <description>
 
-&lt;h1 id=&#34;c-那点事&#34;&gt;C++那点事&lt;/h1&gt;
-
 &lt;h3 id=&#34;变量和基本类型&#34;&gt;变量和基本类型&lt;/h3&gt;
 
-&lt;p&gt;1、执行浮点运算选用double，以为float通常精度不够而且双精度浮点数和单精度浮点数的计算代价相差无几，甚至某些机器上，双精度运算甚至比单精度的快。
-2、当我们赋值无符号类型超过范围时，其结果为该类型表示数值的总数取模后的余数，例如
-  &lt;strong&gt;unsigned char a = -4 ;     //a的值为-4+256=252&lt;/strong&gt;
-3、当我们赋值有符号类型超过范围时，其结果是无意义的，此时程序可能继续工作，也可能会崩溃，也有可能产生垃圾数据，例如
-      signed char a = 256 //此时a是无定义的
-4、表达式中既有无符号的数字，又有带符号的数字是，会强制转换为无符号的数字。&lt;br /&gt;
-5、减法运算带有强制的类型转换，例如：&lt;br /&gt;
-**  unsigned char a = 40, b =10;
-    std::cout&amp;lt;&amp;lt;b-a&amp;lt;&amp;lt;endl;      //此时输出的结果为-30
-    signed char a = 40, b =10;
-    std::cout&amp;lt;&amp;lt;b-a&amp;lt;&amp;lt;endl;    //此时输出的结果为-30
-    unsigned int a = 40, b =10;
-    std::cout&amp;lt;&amp;lt;b-a&amp;lt;&amp;lt;endl;    //此时输出的结果为4294967266**
-这是因为减法运算会将unsigned char 或者signed char转换为int类型后进行减法操作，但是unsigned int不会进行强制转换，这一点很容易出错。
-6、字符和字符串的区别，字符串包含结束符\0，同时是单引号和双引号的区别。
-7、C++中初始化和赋值是两个完全不同的操作，初始化的含义是创建变量的时候赋予其一个初始值，复制的含义是把对象当前的值擦除，用一个新值替代。
-8、变量初始化的方式有四种：
-     int temp = 0；
-     int temp = {0}；
-     int temp ={0}；
-     int temp = （0）；
-     其中第二种、第三种称作列表初始化，列表初始化时不能进行类型转换。
-     9、使用未初始化的变量可能会带来无法预计的后果，建议初始化每一个内置类型的变量。
-     10、extern关键字表示声明的含义，extern语句包含初始化值的情况下将不是声明，而是定义。
-     extern int i； //声明i而非定义
-      int i； //定义
-     extern int i = 2； //定义
-     变量只能定义一次，但是可以声明多次，尤其是分块编程的时候。
-     11、c++变量命名规范：
-     标识要能体现实际含义；
-     变量名一般用小写，例如index，不要使用Index或者INDEX；
-     用户自定义的的类名一般以大写字母开头，例如Sale_item；
-     如果标识由多个单词组成，则单词应有明显的区分，如student_loan studentLoan；
-     最后，命名规范这件事，若能坚持，必将有效。
-     12、在对象第一次使用的地方附近定义它是一种较好的选择，这样有助于找到变量的定义，而且有助于赋给一个合适的初值。
-     13、如果函数有可能用到一个全局的变量，则最好不要再定义一个同名的局部变量。（是针对同一个名字在不同的作用域可能指向不同的实体的情况）
-     14、引用：引用为对象起另一个名字，引用必须初始化，初始值也必须为一个对象，同时类型应保持一致，而且引用本身不是一个对象，不能定义引用的引用。
-     int ival = 1024;
-     int &amp;amp;reival = ival;// 正确 引用
-     int &amp;reval2;// 错误，引用必须初始化
-     double temp = 3.14；
-     int &amp;amp;retemp = temp；//错误，引用的类型必须保持一致
-     15、指针：指针本身就是一盒对象，允许对指针进行赋值和拷贝，而且在指针的生命周期内能先后指向不同的对像。指针无需在定义的时候赋初值，如果指针没有被初始化，将拥有一个不确定的值。
-     但是，使用未经初始化的指针是引发问题的重要原因，建议初始化所有的指针，并且在可能的情况下，尽量定义了对象之后在定义指向他的指针。如果实在不能确定指针指向何处，初始化为nullptr和0，然后在程序中每次使用指针前先进性判断，尽可能的减少错误的可能。
-     16、空指针的定义：
-     int  *p1 = nullptr;//
-     int  *p2 = 0;//
-     int  *p3 = NULL;
-     但是把int变量直接赋给指针是错误的操作，即使这个int变量的值等于0；
-     int zero = 0；
-     p1 = zero；//错误，不能讲int类型的变量直接赋给指针
-     17、因为引用不是一个实际的对象，故不能定义指向引用的指针；
-     18、指针的类型和它所指向的对象的类型需要严格的匹配；
-     19、指针定义的时候，和具体使用指针的时候有下面的区别：
-     int  pd =42;
-     int  *p1 = pd; int *p1 =  &amp;pd;//这两种定义的方式都正确 第一种 初始值是指向int对象的指针；第二种是初始值是int型对象的地址。
-     定义完之后，p1表示地址，*p1表示指向的对象，即pd；
-     *p1 = &amp;amp;pd//错误
-     为*p赋值实际是为p1所指向的对象复制，所以&lt;em&gt;解引用操作只适用于那些明确指向了对象的指针。
-     20 、int&lt;/em&gt;  p1 和 int   &lt;em&gt;p1 的作用是一样的，而且int&lt;/em&gt; 没有批量操作的作用，所以这两种写法只要坚持其中的一种即可，在接下来的博客中，均采用第二种方法。
-     21、距离变量名最近的符号对变量的类型有最直接的影响：
-     int p = 42;
-     int *p1 = &amp;p;
-     int  **p2 =  &amp;p1;//指向指针的指针
-     int  *&amp;amp;p3 = p1;//对一个指针的引用
-     p3 = &amp;p;//p3引用了一个指针，因此可以将地址赋给p3
-     *p3 = 0; //将p3引用的指针解引用操作，再复制，就是p目前为0。&lt;/p&gt;
+&lt;p&gt;1、执行浮点运算选用double，以为float通常精度不够而且双精度浮点数和单精度浮点数的计算代价相差无几，甚至某些机器上，双精度运算甚至比单精度的快。&lt;br /&gt;
+2、当我们赋值无符号类型超过范围时，其结果为该类型表示数值的总数取模后的余数，例如&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;unsigned char a = -4 ;     //a的值为-4+256=252   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3、当我们赋值有符号类型超过范围时，其结果是无意义的，此时程序可能继续工作，也可能会崩溃，也有可能产生垃圾数据，例如&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;signed char a = 256 //此时a是无定义的
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;4、表达式中既有无符号的数字，又有带符号的数字是，会强制转换为无符号的数字。&lt;br /&gt;
+5、减法运算带有强制的类型转换，例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;unsigned char a = 40, b =10;
+std::cout&amp;lt;&amp;lt;b-a&amp;lt;&amp;lt;endl;      //此时输出的结果为-30
+signed char a = 40, b =10;
+std::cout&amp;lt;&amp;lt;b-a&amp;lt;&amp;lt;endl;    //此时输出的结果为-30
+unsigned int a = 40, b =10;
+std::cout&amp;lt;&amp;lt;b-a&amp;lt;&amp;lt;endl;    //此时输出的结果为4294967266
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这是因为减法运算会将unsigned char 或者signed char转换为int类型后进行减法操作，但是unsigned int不会进行强制转换，这一点很容易出错。&lt;br /&gt;
+6、字符和字符串的区别，字符串包含结束符\0，同时是单引号和双引号的区别。&lt;br /&gt;
+7、C++中初始化和赋值是两个完全不同的操作，初始化的含义是创建变量的时候赋予其一个初始值，复制的含义是把对象当前的值擦除，用一个新值替代。&lt;br /&gt;
+8、变量初始化的方式有四种：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; int temp = 0； 
+ int temp = {0}；
+ int temp = {0}；
+ int temp = （0）；
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中第二种、第三种称作列表初始化，列表初始化时不能进行类型转换。&lt;br /&gt;
+9、使用未初始化的变量可能会带来无法预计的后果，建议初始化每一个内置类型的变量。&lt;br /&gt;
+10、extern关键字表示声明的含义，extern语句包含初始化值的情况下将不是声明，而是定义。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;extern int i； //声明i而非定义
+int i； //定义
+extern int i = 2； //定义
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;变量只能定义一次，但是可以声明多次，尤其是分块编程的时候。&lt;br /&gt;
+11、c++变量命名规范：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;标识要能体现实际含义；
+变量名一般用小写，例如index，不要使用Index或者INDEX；  
+用户自定义的的类名一般以大写字母开头，例如Sale_item；  
+如果标识由多个单词组成，则单词应有明显的区分，如student_loan studentLoan；  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后，命名规范这件事，若能坚持，必将有效。&lt;br /&gt;
+12、在对象第一次使用的地方附近定义它是一种较好的选择，这样有助于找到变量的定义，而且有助于赋给一个合适的初值。&lt;br /&gt;
+13、如果函数有可能用到一个全局的变量，则最好不要再定义一个同名的局部变量。（是针对同一个名字在不同的作用域可能指向不同的实体的情况）&lt;br /&gt;
+14、引用：引用为对象起另一个名字，引用必须初始化，初始值也必须为一个对象，同时类型应保持一致，而且引用本身不是一个对象，不能定义引用的引用。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int ival = 1024;
+int &amp;amp;reival = ival;// 正确 引用
+int &amp;amp;reval2;// 错误，引用必须初始化
+double temp = 3.14；
+int &amp;amp;retemp = temp；//错误，引用的类型必须保持一致
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;15、指针：指针本身就是一盒对象，允许对指针进行赋值和拷贝，而且在指针的生命周期内能先后指向不同的对像。指针无需在定义的时候赋初值，如果指针没有被初始化，将拥有一个不确定的值。但是，使用未经初始化的指针是引发问题的重要原因，建议初始化所有的指针，并且在可能的情况下，尽量定义了对象之后在定义指向他的指针。如果实在不能确定指针指向何处，初始化为nullptr和0，然后在程序中每次使用指针前先进性判断，尽可能的减少错误的可能。&lt;br /&gt;
+16、空指针的定义：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int  *p1 = nullptr;//
+int  *p2 = 0;//
+int  *p3 = NULL;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;但是把int变量直接赋给指针是错误的操作，即使这个int变量的值等于0；&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int zero = 0；
+p1 = zero；//错误，不能讲int类型的变量直接赋给指针
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;17、因为引用不是一个实际的对象，故不能定义指向引用的指针；&lt;br /&gt;
+18、指针的类型和它所指向的对象的类型需要严格的匹配；&lt;br /&gt;
+19、指针定义的时候，和具体使用指针的时候有下面的区别：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int  pd =42; 
+int  *p1 = pd; int *p1 =  &amp;amp;pd;//这两种定义的方式都正确 第一种 初始值是指向int对象的指针；第二种是初始值是int型对象的地址。
+定义完之后，p1表示地址，*p1表示指向的对象，即pd；
+*p1 = &amp;amp;pd//错误
+为*p赋值实际是为p1所指向的对象复制，所以*解引用操作只适用于那些明确指向了对象的指针。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;20 、int*  p1 和 int   &lt;em&gt;p1 的作用是一样的，而且int&lt;/em&gt; 没有批量操作的作用，所以这两种写法只要坚持其中的一种即可，在接下来的博客中，均采用第二种方法。&lt;br /&gt;
+21、距离变量名最近的符号对变量的类型有最直接的影响：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int p = 42;
+int *p1 = &amp;amp;p;
+int  **p2 =  &amp;amp;p1;//指向指针的指针
+int  *&amp;amp;p3 = p1;//对一个指针的引用
+p3 = &amp;amp;p;//p3引用了一个指针，因此可以将地址赋给p3
+*p3 = 0; //将p3引用的指针解引用操作，再复制，就是p目前为0。
+&lt;/code&gt;&lt;/pre&gt;
 </description>
       
     </item>
@@ -260,9 +291,44 @@ make&lt;br /&gt;
     </item>
     
     <item>
+      <title>相机模型与标定</title>
+      <link>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</guid>
+      
+        <description>
+
+&lt;p&gt;由于近期使用了很多种不同的相机，关于相机的模型和标定方法也是老生常谈的问题，这也是视觉定位的必要前提，本文只要分为三个部分：坐标系的转换、相机模型和畸变模型。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;坐标系转换&lt;br /&gt;
+像素坐标、图像坐标、摄像机坐标、世界坐标，其中世界坐标到摄像机坐标为刚体变换、摄像机坐标到图像坐标为透视投影、图像坐标到像素坐标为二次转换，牵扯到的具体的相机的内参矩阵和外参矩阵。&lt;/li&gt;
+&lt;li&gt;相机的模型&lt;br /&gt;
+相机模型分为针孔模型（线性模型）和非线性模型（鱼眼相机）&lt;/li&gt;
+&lt;li&gt;畸变模型&lt;br /&gt;
+畸变一般可以分为：径向畸变、切向畸变径向畸变来自于透镜形状。切向畸变来自于整个摄像机的组装过程。对于鱼眼相机，存在比较严重的畸变，主要是径向形变（普通相机也有，也会有轻微的切向形变）。针对具体的标定时，常用的畸变模型有fisheye模型、多项式畸变模型、ATAN模型和FOV模型。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;具体的标定工具：&lt;br /&gt;
+* Matlab 标定工具箱&lt;br /&gt;
+* Ros标定工具&lt;br /&gt;
+* opencv标定工具&lt;br /&gt;
+* 在github中，邹丹平老师有一套标定代码，我们通常用来标定鱼眼相机，该工具中已有的畸变模型有FOV模型，fisheye模型和Plumb—Bob模型。&lt;br /&gt;
+* 对于SVO算法，由于ATAN标定的模型参数便于快速计算，故常采用PTAM中的标定程序来标定ATAN畸变模型。&lt;br /&gt;
+上述只是本人常常使用的方法，欢迎大家推荐和指正。&lt;/p&gt;
+
+&lt;h3 id=&#34;总结-2018-10-02&#34;&gt;总结 2018-10-02&lt;/h3&gt;
+
+&lt;p&gt;本次主要是缕清相机模型、畸变模型还有常用的坐标转换之间的关系，同一种相机可以使用不同的畸变模型进行标定。比如，同一种鱼眼相机，可以采用FOV畸变模型进行来标定，同样可以采用ATAN畸变模型进行标定，标定的结果的具体含义是不同的。对于具体的数学关系的推算，以及相应的标定工具的具体使用方法，接下来会详细说明，其中是以邹老师的标定程序为主体框架，详细的介绍标定的代码流程和使用方法，同时也会相应的介绍不同的畸变模型下对应的解畸变方法，具体的代码也会公布到github主页上面。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>github的问题</title>
       <link>https://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Thu, 13 Sep 2018 20:58:50 +0000</pubDate>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
       
@@ -300,41 +366,6 @@ git config &amp;ndash;global credential.helper &amp;lsquo;cache &amp;ndash;timeo
 &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;偶然一啸当空发，孤鸿万里应声泣。经历了一件事后，总归有所感触感悟，当时刻骨铭心，后来不过如此，再细细回味，可能再也不会有当时感觉，甚至在记忆中消失殆尽，岁月长，衣裳薄。开设这个博客，记录的同时，也希望自己不要被一时的感慨感触感悟搞迷糊，凡心所向，素履所往，希望自己不要徒碌碌滞于俗，默默束于情。&lt;/p&gt;
 
 &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;今天就这样吧，明天还要开组会，以后慢慢补充吧。&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>相机模型与标定</title>
-      <link>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</guid>
-      
-        <description>
-
-&lt;p&gt;由于近期使用了很多种不同的相机，关于相机的模型和标定方法也是老生常谈的问题，这也是视觉定位的必要前提，本文只要分为三个部分：坐标系的转换、相机模型和畸变模型。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;坐标系转换&lt;br /&gt;
-像素坐标、图像坐标、摄像机坐标、世界坐标，其中世界坐标到摄像机坐标为刚体变换、摄像机坐标到图像坐标为透视投影、图像坐标到像素坐标为二次转换，牵扯到的具体的相机的内参矩阵和外参矩阵。&lt;/li&gt;
-&lt;li&gt;相机的模型&lt;br /&gt;
-相机模型分为针孔模型（线性模型）和非线性模型（鱼眼相机）&lt;/li&gt;
-&lt;li&gt;畸变模型&lt;br /&gt;
-畸变一般可以分为：径向畸变、切向畸变径向畸变来自于透镜形状。切向畸变来自于整个摄像机的组装过程。对于鱼眼相机，存在比较严重的畸变，主要是径向形变（普通相机也有，也会有轻微的切向形变）。针对具体的标定时，常用的畸变模型有fisheye模型、多项式畸变模型、ATAN模型和FOV模型。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;具体的标定工具：&lt;br /&gt;
-* Matlab 标定工具箱&lt;br /&gt;
-* Ros标定工具&lt;br /&gt;
-* opencv标定工具&lt;br /&gt;
-* 在github中，邹丹平老师有一套标定代码，我们通常用来标定鱼眼相机，该工具中已有的畸变模型有FOV模型，fisheye模型和Plumb—Bob模型。&lt;br /&gt;
-* 对于SVO算法，由于ATAN标定的模型参数便于快速计算，故常采用PTAM中的标定程序来标定ATAN畸变模型。&lt;br /&gt;
-上述只是本人常常使用的方法，欢迎大家推荐和指正。&lt;/p&gt;
-
-&lt;h3 id=&#34;总结-2018-10-02&#34;&gt;总结 2018-10-02&lt;/h3&gt;
-
-&lt;p&gt;本次主要是缕清相机模型、畸变模型还有常用的坐标转换之间的关系，同一种相机可以使用不同的畸变模型进行标定。比如，同一种鱼眼相机，可以采用FOV畸变模型进行来标定，同样可以采用ATAN畸变模型进行标定，标定的结果的具体含义是不同的。对于具体的数学关系的推算，以及相应的标定工具的具体使用方法，接下来会详细说明，其中是以邹老师的标定程序为主体框架，详细的介绍标定的代码流程和使用方法，同时也会相应的介绍不同的畸变模型下对应的解畸变方法，具体的代码也会公布到github主页上面。&lt;/p&gt;
 </description>
       
     </item>

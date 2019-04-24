@@ -1,23 +1,18 @@
 ---
 title: "github的问题"
-date: 2018-09-13T20:58:50+00:00
-lastmod: 2018-09-13T20:58:50+00:00
+date: 2018-09-13
+lastmod: 2018-09-13
 draft: false
-tags: [ ]
-categories: [ ]
+tags: ['git']
+categories: ['others']
 author: "Yang"
-
-# You can also close(false) or open(true) something for this content.
-# P.S. comment can only be closed
-# comment: false
-# toc: false
+comment: true
+toc: false
 autoCollapseToc: true
-# You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
 contentCopyright: '<a href="https://github.com/gohugoio/hugoBasicExample" rel="noopener" target="_blank">See origin</a>'
-# reward: false
-# mathjax: false
+reward: false
+mathjax: false
 ---
-
 
 - git 提交github后文件夹为灰颜色问题  
 因为使用git clone 之后，文件夹里面会包含原来相关的信息，所以重新push之后会显示灰颜色。解决方案：  

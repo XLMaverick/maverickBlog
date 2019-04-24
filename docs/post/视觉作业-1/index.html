@@ -72,7 +72,7 @@
 
 
 
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="slam," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="视觉作业-1"/>
 <meta name="twitter:description" content="背景 本学期，由于邹老师开设视觉定位的课程，我们组的大部分人基本每节课都在听，本次课程邹老师总共会设置六次大作业，应该难度不会很大。既然来上课"/>
@@ -293,7 +293,10 @@
         <time datetime="2018-10-04" class="post-time">
           2018-10-04
         </time>
-        
+        <div class="post-category">
+            <a href="https://xlmaverick.me/categories/slam/"> slam </a>
+            
+          </div>
         
 
         
@@ -306,24 +309,6 @@
 
     
     
-<div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
-  <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#背景">背景</a></li>
-<li><a href="#作业要求">作业要求</a></li>
-<li><a href="#代码说明">代码说明</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-  </div>
-</div>
 
     
     <div class="post-content">
@@ -389,12 +374,15 @@ make<br />
     
 
     <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="https://xlmaverick.me/tags/slam/">slam</a>
+          
+        </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/just_coding_1/">
+          <a class="prev" href="/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B1/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -404,12 +392,12 @@ make<br />
 </svg>
 
             </i>
-            <span class="prev-text nav-default">just_coding_1</span>
+            <span class="prev-text nav-default">C&#43;&#43;基础知识--变量和基本类型1</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/github%E7%9A%84%E9%97%AE%E9%A2%98/">
-            <span class="next-text nav-default">github的问题</span>
+          <a class="next" href="/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/">
+            <span class="next-text nav-default">相机模型与标定</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
@@ -438,7 +426,33 @@ make<br />
 
   
 
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    显示 Disqus 评论
+  </div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = "https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/";
+    };
+    function load_disqus() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yangxl0319@163.com';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
   
+  </div>
   
     
 
@@ -571,6 +585,13 @@ make<br />
 
 <script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 
