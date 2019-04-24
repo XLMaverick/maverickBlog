@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Slam on XLMaverick - garabatear of yang</title>
-    <link>https://www.xlmaverick.me/categories/slam/</link>
+    <link>http://xlmaverick.me/categories/slam/</link>
     <description>Recent content in Slam on XLMaverick - garabatear of yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 04 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.xlmaverick.me/categories/slam/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xlmaverick.me/categories/slam/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>视觉作业-1</title>
-      <link>https://www.xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</link>
+      <link>http://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</guid>
+      <guid>http://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</guid>
       <description>背景 本学期，由于邹老师开设视觉定位的课程，我们组的大部分人基本每节课都在听，本次课程邹老师总共会设置六次大作业，应该难度不会很大。既然来上课</description>
     </item>
     
