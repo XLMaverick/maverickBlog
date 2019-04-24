@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on XLMaverick - garabatear of yang</title>
+    <link>https://xlmaverick.me/post/</link>
+    <description>Recent content in Posts on XLMaverick - garabatear of yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 10 Feb 2019 10:58:50 +0000</lastBuildDate>
+    
+	<atom:link href="https://xlmaverick.me/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>终食之言--电影春节档</title>
+      <link>https://xlmaverick.me/post/%E7%BB%88%E9%A3%9F%E4%B9%8B%E8%A8%80--%E7%94%B5%E5%BD%B1%E6%98%A5%E8%8A%82%E6%A1%A3/</link>
+      <pubDate>Sun, 10 Feb 2019 10:58:50 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E7%BB%88%E9%A3%9F%E4%B9%8B%E8%A8%80--%E7%94%B5%E5%BD%B1%E6%98%A5%E8%8A%82%E6%A1%A3/</guid>
+      <description>过年总得有消遣，一群人尬聊，找话题也是件头疼的事，所以啊，有些人一起吃饭，有些人打麻将，诚然，打麻将得需要加赌注，吃饭需要喝酒，总有一个办法</description>
+    </item>
+    
+    <item>
+      <title>just_coding_2</title>
+      <link>https://xlmaverick.me/post/just_coding_2/</link>
+      <pubDate>Wed, 26 Dec 2018 20:58:50 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/just_coding_2/</guid>
+      <description>string vector array string 1、using的声明最好不要放到头文件中，因为很多地方包含头文件，容易造成命名空间冲突。 2、string对象会自动忽略开头处的空白，</description>
+    </item>
+    
+    <item>
+      <title>just_coding_1</title>
+      <link>https://xlmaverick.me/post/just_coding_1/</link>
+      <pubDate>Thu, 20 Dec 2018 20:58:50 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/just_coding_1/</guid>
+      <description>C++那点事 变量和基本类型 1、执行浮点运算选用double，以为float通常精度不够而且双精度浮点数和单精度浮点数的计算代价相差无几，甚至</description>
+    </item>
+    
+    <item>
+      <title>视觉作业-1</title>
+      <link>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</guid>
+      <description>背景 本学期，由于邹老师开设视觉定位的课程，我们组的大部分人基本每节课都在听，本次课程邹老师总共会设置六次大作业，应该难度不会很大。既然来上课</description>
+    </item>
+    
+    <item>
+      <title>github的问题</title>
+      <link>https://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 13 Sep 2018 20:58:50 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description>git 提交github后文件夹为灰颜色问题 因为使用git clone 之后，文件夹里面会包含原来相关的信息，所以重新push之后会显示灰颜色。解决方案： * 删</description>
+    </item>
+    
+    <item>
+      <title>写在博客边上</title>
+      <link>https://xlmaverick.me/post/%E5%86%99%E5%9C%A8%E5%8D%9A%E5%AE%A2%E8%BE%B9%E4%B8%8A/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E5%86%99%E5%9C%A8%E5%8D%9A%E5%AE%A2%E8%BE%B9%E4%B8%8A/</guid>
+      <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;关于这个博客的起因是随机的，关于这个博客的过</description>
+    </item>
+    
+    <item>
+      <title>相机模型与标定</title>
+      <link>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</link>
+      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</guid>
+      <description>由于近期使用了很多种不同的相机，关于相机的模型和标定方法也是老生常谈的问题，这也是视觉定位的必要前提，本文只要分为三个部分：坐标系的转换、相</description>
+    </item>
+    
+  </channel>
+</rss>
