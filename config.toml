@@ -2,7 +2,7 @@
 # If you want to see the full configuration, please check `full-config.toml` .
 # And see https://gohugo.io/getting-started/configuration/ .
 
-baseURL = "https://www.xlmaverick.me"
+baseURL = "http://www.xlmaverick.me"
 title = "XLMaverick - garabatear of yang"
 publishDir = "docs"
 enableRobotsTXT = true
