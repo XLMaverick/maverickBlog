@@ -68,7 +68,7 @@
 
 <meta itemprop="datePublished" content="2018-10-04T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-10-04T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="391">
+<meta itemprop="wordCount" content="543">
 
 
 
@@ -89,6 +89,41 @@
 
 
 
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
 </head>
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
@@ -309,6 +344,24 @@
 
     
     
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#背景">背景</a></li>
+<li><a href="#作业要求">作业要求</a></li>
+<li><a href="#代码说明">代码说明</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
 
     
     <div class="post-content">
@@ -316,7 +369,7 @@
 
 <h3 id="背景">背景</h3>
 
-<p>本学期，由于邹老师开设视觉定位的课程，我们组的大部分人基本每节课都在听，本次课程邹老师总共会设置六次大作业，应该难度不会很大。既然来上课了，所以就把相关的作业也做了。具体的代码和课件，我会放到自己的github上面：<a href="https://github.com/XLMaverick/Visual-Localization-Percessing-Homework；">https://github.com/XLMaverick/Visual-Localization-Percessing-Homework；</a><br />
+<p>本学期，由于邹老师开设视觉定位的课程，我们组的大部分人基本每节课都在听，本次课程邹老师总共会设置六次大作业，应该难度不会很大。既然来上课了，所以就把相关的作业也做了。具体的代码和课件，我会放到自己的github上面：<a href="https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/homework_PPT_Zou_2018/Partial_code">https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/homework_PPT_Zou_2018/Partial_code</a> ；<br />
 第一次作业是Histogram Specialization，是图像处理中基本的操作了，要求是不能使用相关的函数库，具体的要求和代码如下所示：</p>
 
 <h3 id="作业要求">作业要求</h3>
@@ -327,13 +380,13 @@
 <li>Consider two brightness mapping functions transform both histograms into a constant histogram:</li>
 </ul>
 
-<p><img src="../images/Histogram-1.png" alt="" />{:height=&ldquo;50%&rdquo; width=&ldquo;50%&rdquo;}</p>
+<p><img src="../images/视觉作业-1/Histogram-1.png" alt="" />{:height=&ldquo;50%&rdquo; width=&ldquo;50%&rdquo;}</p>
 
 <ul>
 <li>Algorithm:<br /></li>
 </ul>
 
-<p><img src="../images/Histogram-2.png" alt="" /></p>
+<p><img src="../images/视觉作业-1/Histogram-2.png" alt="" /></p>
 
 <h3 id="代码说明">代码说明</h3>
 
@@ -348,6 +401,8 @@ cd build<br />
 cmake ..<br />
 make<br />
 ./Histogram_specialization</p>
+
+<p>完整程序链接：<a href="https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/homework_PPT_Zou_2018/Partial_code">https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/homework_PPT_Zou_2018/Partial_code</a></p>
 
     </div>
 
@@ -585,13 +640,6 @@ make<br />
 
 <script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
-  <script type="text/javascript">
-    window.MathJax = {
-      showProcessingMessages: false,
-      messageStyle: 'none'
-    };
-  </script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 

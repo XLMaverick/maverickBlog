@@ -6,10 +6,28 @@
     <description>Recent content in Slam on XLMaverick - garabatear of yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xlmaverick.me/categories/slam/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>非线性优化</title>
+      <link>https://xlmaverick.me/post/%E9%9D%9E%E7%BA%BF%E6%80%A7%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E9%9D%9E%E7%BA%BF%E6%80%A7%E4%BC%98%E5%8C%96/</guid>
+      <description>非线性优化 习题一：矩阵微分 在优化中经常会遇到矩阵微分的问题。例如,当自变量为向量$x$,求标量函数$u(x)$对$x$的导数时,即为矩阵微分</description>
+    </item>
+    
+    <item>
+      <title>相机与图像</title>
+      <link>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E4%B8%8E%E5%9B%BE%E5%83%8F/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E4%B8%8E%E5%9B%BE%E5%83%8F/</guid>
+      <description>相机与图像 习题一：图像去畸变 现实生活中的图像总存在畸变。原则上来说,针孔透视相机应该将三维世界中的直线投影成直线,但是当我们使用广角和鱼眼镜</description>
+    </item>
     
     <item>
       <title>视觉作业-1</title>

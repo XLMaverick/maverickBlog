@@ -45,6 +45,543 @@
     </item>
     
     <item>
+      <title>非线性优化</title>
+      <link>https://xlmaverick.me/post/%E9%9D%9E%E7%BA%BF%E6%80%A7%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E9%9D%9E%E7%BA%BF%E6%80%A7%E4%BC%98%E5%8C%96/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;非线性优化&#34;&gt;非线性优化&lt;/h1&gt;
+
+&lt;h2 id=&#34;习题一-矩阵微分&#34;&gt;习题一：矩阵微分&lt;/h2&gt;
+
+&lt;p&gt;在优化中经常会遇到矩阵微分的问题。例如,当自变量为向量$x$,求标量函数$u(x)$对$x$的导数时,即为矩阵微分。通常线性代数教材不会深入探讨此事,这往往是矩阵论的内容。回答下列问题:
+设变量为$x\in{R^N}$，那么:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;矩阵$A\in{R^{N×N}}$，那么$d(Ax)/dx$是什么？&lt;/li&gt;
+&lt;li&gt;矩阵$A\in{R^{N×N}}$，那么$d(x^TAx)/dx$是什么？&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;证明：
+&lt;p&gt;
+$$
+x^TA^Tx = tr(Axx^T ).
+$$
+&lt;/p&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;分析&#34;&gt;分析&lt;/h4&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;涉及到矩阵和向量的求导，总共有五种类型，注意相关的顺序以及于雅各比矩阵的区别，再强调一次，雅各比矩阵的列数为自变量的个数，这一点要记清楚。
+A.向量对标量；
+B.标量对向量；
+C.向量对向量；
+D.矩阵对标量；
+E.标量对矩阵；
+他们分别对应的形式如下所示：&lt;br /&gt;
+$$
+向量对标量: \frac{\partial{Y}}{\partial{x}} = \begin{bmatrix} \frac{\partial{y_1}}{\partial{x}} \ \frac{\partial{y_2}}{\partial{x}} \  \vdots \ \frac{\partial{y_m}}{\partial{x}} \end{bmatrix}
+$$&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;$$
+ 标量对向量: \frac{\partial{y}}{\partial{X}} = \begin{bmatrix} \frac{\partial{y}}{\partial{x_1}} &amp;amp; \frac{\partial{y}}{\partial{x_2}} &amp;amp;  \cdots &amp;amp; \frac{\partial{y}}{\partial{x_n}} \end{bmatrix}
+$$&lt;/p&gt;
+
+&lt;p&gt;$$
+ 向量对向量: \frac{\partial{Y}}{\partial{X}} = \begin{bmatrix} \frac{\partial{y_1}}{\partial{x_1}} &amp;amp; \frac{\partial{y_2}}{\partial{x_1}} &amp;amp;  \cdots &amp;amp; \frac{\partial{y_m}}{\partial{x_1}} \\
+ \frac{\partial{y_1}}{\partial{x_2}} &amp;amp; \frac{\partial{y_2}}{\partial{x_2}} &amp;amp;  \cdots &amp;amp; \frac{\partial{y_m}}{\partial{x_2}} \\
+ \vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\
+  \frac{\partial{y_1}}{\partial{x_n}} &amp;amp; \frac{\partial{y_2}}{\partial{x_n}} &amp;amp;  \cdots &amp;amp; \frac{\partial{y_m}}{\partial{x_n}} \\
+ \end{bmatrix}
+$$&lt;/p&gt;
+
+&lt;p&gt;
+$$
+ 矩阵对标量: \frac{\partial{Y}}{\partial{x}} = \begin{bmatrix} \frac{\partial{y_{11}}}{\partial{x}} &amp; \frac{\partial{y_{21}}}{\partial{x}} &amp;  \cdots &amp; \frac{\partial{y_{m1}}}{\partial{x}} \\\\ 
+ \frac{\partial{y_{12}}}{\partial{x}} &amp; \frac{\partial{y_{22}}}{\partial{x}} &amp;  \cdots &amp; \frac{\partial{y_{m2}}}{\partial{x}} \\\\ 
+ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\\\ 
+  \frac{\partial{y_{1n}}}{\partial{x}} &amp; \frac{\partial{y_{2n}}}{\partial{x}} &amp;  \cdots &amp; \frac{\partial{y_{mn}}}{\partial{x}} \\\\ 
+ \end{bmatrix}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;
+$$
+ 标量对矩阵: \frac{\partial{y}}{\partial{X}} = \begin{bmatrix} \frac{\partial{y}}{\partial{x_{11}}} &amp; \frac{\partial{y}}{\partial{x_{12}}} &amp;  \cdots &amp; \frac{\partial{y}}{\partial{x_{1n}}} \\
+ \frac{\partial{y}}{\partial{x_{21}}} &amp; \frac{\partial{y}}{\partial{x{22}}} &amp;  \cdots &amp; \frac{\partial{y}}{\partial{x_{2n}}} \\
+ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+  \frac{\partial{y}}{\partial{x_{m1}}} &amp; \frac{\partial{y}}{\partial{x_{m2}}} &amp;  \cdots &amp; \frac{\partial{y}}{\partial{x_{mn}}} \\
+ \end{bmatrix}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;我们常用的矩阵求导公式有：&lt;/p&gt;
+
+&lt;p&gt;$$
+    Y = A * X &amp;ndash;&amp;gt; \frac{\partial{Y}}{\partial{X}} = A^T
+$$
+$$
+    Y = X * A &amp;ndash;&amp;gt; \frac{\partial{Y}}{\partial{X}} = A&lt;br /&gt;
+$$
+$$
+    Y = A^T * X * B &amp;ndash;&amp;gt; \frac{\partial{Y}}{\partial{X}} = A * B^T&lt;br /&gt;
+$$
+$$
+    Y = A^T * X^T * B &amp;ndash;&amp;gt; \frac{\partial{Y}}{\partial{X}} = B * A^T&lt;br /&gt;
+$$
+$$
+    \frac{\partial{X^TX}}{\partial{X}} = X
+$$&lt;/p&gt;
+
+&lt;h4 id=&#34;答案&#34;&gt;答案：&lt;/h4&gt;
+
+&lt;p&gt;1、设$Y=AX$，则$Y\in{R^{N*1}}$，所以$\frac{\partial{Y}}{\partial{X}}$属于向量对向量的形式，其中Y向量我们可以计算得出：&lt;/p&gt;
+
+&lt;p&gt;
+$$
+Y = \begin{bmatrix} a_{11}*x_1+a_{12}*x_2+ \cdots + a_{1n}*x_n\\ 
+a_{21}*x_1+a_{22}*x_2+ \cdots + a_{2n}*x_n \\  
+\vdots \\ 
+a_{n1}*x_1+a_{n2}*x_2+ \cdots + a_{nn}*x_n
+\end{bmatrix}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;则我们由上述向量对向量的式子可以得到：&lt;/p&gt;
+
+&lt;p&gt;
+$$
+\frac{\partial{Y}}{\partial{X}} = \begin{bmatrix} \frac{\partial{y_1}}{\partial{x_1}} &amp; \frac{\partial{y_2}}{\partial{x_1}} &amp;  \cdots &amp; \frac{\partial{y_m}}{\partial{x_1}} \\
+ \frac{\partial{y_1}}{\partial{x_2}} &amp; \frac{\partial{y_2}}{\partial{x_2}} &amp;  \cdots &amp; \frac{\partial{y_m}}{\partial{x_2}} \\
+ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+  \frac{\partial{y_1}}{\partial{x_n}} &amp; \frac{\partial{y_2}}{\partial{x_n}} &amp;  \cdots &amp; \frac{\partial{y_m}}{\partial{x_n}} \\
+ \end{bmatrix}
+ $$
+ &lt;/p&gt;
+
+&lt;p&gt;带入YX变量可得：&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+ $$
+    \frac{\partial{Y}}{\partial{X}} =
+         \begin{pmatrix}
+        a_ {11} &amp;amp; a_ {21}  &amp;amp; \cdots &amp;amp; a_ {n1} \\
+        a_ {12} &amp;amp; a_ {22} &amp;amp; \cdots &amp;amp; a_ {n2}\\
+        \vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\
+        a_ {1n} &amp;amp; a_ {2n} &amp;amp; \cdots &amp;amp; a_ {nn} \\
+        \end{pmatrix}
+        = A^T
+ $$
+ &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;2、由第一问我们可以知道，$Y=AX$,我们设 $ Z = x^TY$，则我们可以知道$Z\in{R^{1*1}}$，则&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+ $$
+ Z = \sum_ {i=1}^n\sum_ {j=1}^n a_ {ij}*x_i*x_j
+ $$
+&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;则我们由上述标量对向量的式子可以得到：&lt;/p&gt;
+
+&lt;p&gt;
+ $$
+ \frac{\partial{z}}{\partial{X}} = \begin{bmatrix} \frac{\partial{z}}{\partial{x_1}} &amp; \frac{\partial{z}}{\partial{x_2}} &amp;  \cdots &amp; \frac{\partial{z}}{\partial{x_n}} \end{bmatrix}
+ $$
+ &lt;/p&gt;
+
+&lt;p&gt;我们计算出Z对与 $x_l$的导数为：&lt;/p&gt;
+
+&lt;p&gt;
+ $$
+ \frac{\partial{z}}{\partial{x_l}} = \sum_{i=1}^nx_i*a_{il}+\sum_{j=1}^nx_j*a_{lj} = (A^T+A)x
+ $$
+ &lt;/p&gt;
+
+&lt;p&gt;3、根据上述的第二问，我们可以将$x^TA^Tx$展开，同时可以将$Axx^T$展开，最终我们能够证明$x^TA^Tx = tr(Axx^T)$,这里不再展开叙述。&lt;/p&gt;
+
+&lt;h2 id=&#34;习题二-高斯牛顿法的曲线拟合实验&#34;&gt;习题二：高斯牛顿法的曲线拟合实验&lt;/h2&gt;
+
+&lt;p&gt;我们在课上演示了用&lt;code&gt;Ceres&lt;/code&gt;和&lt;code&gt;g2o&lt;/code&gt;进行曲线拟合的实验,可以看到优化框架给我们带来了诸多便利。本题中你需要自己实现一遍高斯牛顿的迭代过程,求解曲线的参数。我们将原题复述如下。设有曲线满足以下方程:&lt;/p&gt;
+
+&lt;p&gt;
+$$
+y = exp(ax^2+bx+c)+w
+$$
+&lt;/p&gt;
+
+&lt;p&gt;其中a,b,c为曲线参数,w为噪声。现有N个数据点(x,y)，希望通过此N个点来拟合a,b,c。实验中取$N = 100$。&lt;br /&gt;
+那么，定义误差为 $ e_i = y_i-exp(ax_i^2+bx_i+c)$，于是$(a,b,c)$的最优解可通过解以下最小二乘获得：&lt;/p&gt;
+
+&lt;p&gt;
+$$
+min_{a b c} = \frac{1}{2}\sum_{i=1}^N {||y_i - exp(ax_i^2+bx_i+c)||^2}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;现在请你书写 Gauss-Newton 的程序以解决此问题。&lt;/p&gt;
+
+&lt;h4 id=&#34;分析-1&#34;&gt;分析&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;注意雅克比矩阵和矩阵微分的形式不同，雅克比矩阵列数为自变量的个数，例如本题中，雅克比矩阵的大小应为 $1*3$，雅克比矩阵和梯度矩阵的关系$A=J^T$。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;程序计算的时候，100个H矩阵相加，这一点可以考虑为100数据都这样的大矩阵，分模块相乘就是各个小模块相乘再累加的过程。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;一阶梯度法就是快速下降法，但是快速下降法过于贪心，容易出现锯齿路线，反而增加了迭代的次数。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;二阶梯度法就是牛顿法，缺点是需要计算H矩阵，在大规模的问题中这是很难实现的，我们一般避免计算H矩阵。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;一阶和二阶的方法，都是将$f(x)^2$在$x$附近泰勒展开，但是高斯牛顿的方法是将$f(x)$进行一阶泰勒展开。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;对于列文伯格-马夸尔特的方法，一般认为比高斯牛顿更为健壮，但是它收敛的速度可能会慢于高斯牛顿法，但却在SLAM中大量应用。&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;答案-1&#34;&gt;答案&lt;/h4&gt;
+
+&lt;p&gt;程序最终结果如图所示：
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;../images/非线性优化/result.png&#34;&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;完整程序链接：&lt;a href=&#34;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/gauessnewton&#34;&gt;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/gauessnewton&lt;/a&gt;&lt;br /&gt;
+代码如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    #include &amp;lt;iostream&amp;gt;
+    #include &amp;lt;opencv2/opencv.hpp&amp;gt;
+    #include &amp;lt;Eigen/Core&amp;gt;
+    #include &amp;lt;Eigen/Dense&amp;gt;
+
+    using namespace std;
+    using namespace Eigen;
+
+    int main(int argc, char **argv) 
+    {
+        double ar = 1.0, br = 2.0, cr = 1.0;         // 真实参数值
+        double ae = 2.0, be = -1.0, ce = 5.0;        // 估计参数值
+        int N = 100;                                 // 数据点
+        double w_sigma = 1.0;                        // 噪声Sigma值
+        cv::RNG rng;                                 // OpenCV随机数产生器
+
+        vector&amp;lt;double&amp;gt; x_data, y_data;      // 数据
+        for (int i = 0; i &amp;lt; N; i++) 
+        {
+            double x = i / 100.0;
+            x_data.push_back(x);
+            y_data.push_back(exp(ar * x * x + br * x + cr) + rng.gaussian(w_sigma));
+        }
+
+        // 开始Gauss-Newton迭代
+        int iterations = 100;    // 迭代次数
+        double cost = 0, lastCost = 0;  // 本次迭代的cost和上一次迭代的cost
+
+        for (int iter = 0; iter &amp;lt; iterations; iter++) 
+        {
+            Matrix3d H = Matrix3d::Zero();             // Hessian = J^T J in Gauss-Newton
+            Vector3d b = Vector3d::Zero();             // bias
+            cost = 0;
+
+            for (int i = 0; i &amp;lt; N; i++) 
+            {
+                double xi = x_data[i], yi = y_data[i];  // 第i个数据点
+                double error = 0;   // 第i个数据点的计算误差
+                error =yi -exp(ae*xi*xi+be*xi+ce); // 填写计算error的表达式
+                Vector3d J; // 雅可比矩阵
+                J[0] = -exp(ae*xi*xi+be*xi+ce)*xi*xi;  // de/da
+                J[1] = -exp(ae*xi*xi+be*xi+ce)*xi;  // de/db
+                J[2] = -exp(ae*xi*xi+be*xi+ce);  // de/dc
+
+                H += J * J.transpose(); // GN近似的H
+                b += -error * J;
+
+                cost += error * error;
+            }
+
+            // 求解线性方程 Hx=b，建议用ldlt
+            Vector3d dx;
+            dx = H.ldlt().solve(b);
+
+            if (isnan(dx[0])) 
+            {
+                cout &amp;lt;&amp;lt; &amp;quot;result is nan!&amp;quot; &amp;lt;&amp;lt; endl;
+                break;
+            }
+
+            if (iter &amp;gt; 0 &amp;amp;&amp;amp; cost &amp;gt; lastCost) {
+                // 误差增长了，说明近似的不够好
+                cout &amp;lt;&amp;lt; &amp;quot;cost: &amp;quot; &amp;lt;&amp;lt; cost &amp;lt;&amp;lt; &amp;quot;, last cost: &amp;quot; &amp;lt;&amp;lt; lastCost &amp;lt;&amp;lt; endl;
+                break;
+            }
+
+            // 更新abc估计值
+            ae += dx[0];
+            be += dx[1];
+            ce += dx[2];
+
+            lastCost = cost;
+
+            cout &amp;lt;&amp;lt; &amp;quot;total cost: &amp;quot; &amp;lt;&amp;lt; cost &amp;lt;&amp;lt; endl;
+        }
+
+        cout &amp;lt;&amp;lt; &amp;quot;estimated abc = &amp;quot; &amp;lt;&amp;lt; ae &amp;lt;&amp;lt; &amp;quot;, &amp;quot; &amp;lt;&amp;lt; be &amp;lt;&amp;lt; &amp;quot;, &amp;quot; &amp;lt;&amp;lt; ce &amp;lt;&amp;lt; endl;
+        return 0;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>相机与图像</title>
+      <link>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E4%B8%8E%E5%9B%BE%E5%83%8F/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E4%B8%8E%E5%9B%BE%E5%83%8F/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;相机与图像&#34;&gt;相机与图像&lt;/h1&gt;
+
+&lt;h2 id=&#34;习题一-图像去畸变&#34;&gt;习题一：图像去畸变&lt;/h2&gt;
+
+&lt;p&gt;现实生活中的图像总存在畸变。原则上来说,针孔透视相机应该将三维世界中的直线投影成直线,但是当我们使用广角和鱼眼镜头时,由于畸变的原因,直线在图像里看起来是扭曲的。本次作业,你将尝试如何对一张图像去畸变,得到畸变前的图像。&lt;/p&gt;
+
+&lt;div style=&#34;text-align: center&#34;&gt;
+&lt;img src=&#34;../images/相机与图像/test.png&#34; width = &#39;500&#39;&gt;
+&lt;/div&gt;
+
+&lt;p&gt;上图为本次练习的测试图片，来自EuRoC数据集。可以明显的看到实际的柱子、箱子的直线边缘在图像中被扭曲成了曲线。这就是由相机畸变造成的。根据我们在课上的介绍,畸变前后的坐标变换为:&lt;/p&gt;
+
+&lt;p&gt;
+$$
+    \begin {cases}
+    x_{distorted} = x(1+k_1r^2+k_2r^4)+2p_1xy+p_2(r^2+2x^2) \\
+    y_{distorted} = y(1+k_1r^2+k_2r^4)+p_1(r^2+2y^2)+2p_2xy
+    \end {cases}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;其中 $x,y$为去畸变后的坐标， $x_ {distorted},y_ {distroted}$为去畸变前的坐标。现给定参数:&lt;/p&gt;
+
+&lt;p&gt;$$
+    k_1 =−0.28340811,k_2=0.07395907,p_1 = 0.00019359,p_2 = 1.76187114e^{−05}
+$$
+以及相机内参&lt;/p&gt;
+
+&lt;p&gt;$$
+    f_x = 458.654, f_y = 457.296, c_x = 367.215, c_y = 248.375
+$$
+请根据&lt;code&gt;undistort_image.cpp&lt;/code&gt;文件中内容,完成对该图像的去畸变操作。&lt;/p&gt;
+
+&lt;h4 id=&#34;答案&#34;&gt;答案：&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;视觉SALM十四讲中2017年第一版中关于畸变模型的公式是错误的，这一点以这次的为主。畸变公式表示从去畸变后的坐标到去畸变前的坐标变换。&lt;/li&gt;
+&lt;li&gt;对其中$r$说明，为极坐标系下的距离，即$r^2=x^2+y^2$&lt;br /&gt;
+最终程序的运行结果为：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;../images/相机与图像/result.png&#34; width = &#39;500&#39;&gt;
+&lt;/div&gt;
+
+&lt;p&gt;完整程序链接：&lt;a href=&#34;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/undistort&#34;&gt;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/undistort&lt;/a&gt;&lt;br /&gt;
+代码如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    #include &amp;lt;opencv2/opencv.hpp&amp;gt;
+    #include &amp;lt;string&amp;gt;
+    using namespace std;
+    string image_file = &amp;quot;../../test.png&amp;quot;;   // 请确保路径正确
+    int main(int argc, char **argv)
+    {
+        // 本程序需要你自己实现去畸变部分的代码。尽管我们可以调用OpenCV的去畸变，但自己实现一遍有助于理解。
+        // 畸变参数
+        double k1 = -0.28340811, k2 = 0.07395907, p1 = 0.00019359, p2 = 1.76187114e-05;
+        // 内参
+        double fx = 458.654, fy = 457.296, cx = 367.215, cy = 248.375;
+
+        cv::Mat image = cv::imread(image_file,0);   // 图像是灰度图，CV_8UC1
+        int rows = image.rows, cols = image.cols;
+        cv::Mat image_undistort = cv::Mat(rows, cols, CV_8UC1);   // 去畸变以后的图
+
+        // 计算去畸变后图像的内容
+        for (int v = 0; v &amp;lt; rows; v++)
+        {
+            for (int u = 0; u &amp;lt; cols; u++) 
+            {
+                
+                double u_distorted = 0, v_distorted = 0;
+                // TODO 按照公式，计算点(u,v)对应到畸变图像中的坐标(u_distorted, v_distorted) (~6 lines)
+                // start your code here
+                double x = (u-cx)/fx;
+                double y = (v-cy)/fy;
+
+                double r2 = x*x+y*y;
+                double r4 = r2*r2;
+
+                double x_distorted = x*(1+k1*r2+k2*r4)+2*p1*x*y+p2*(r2+2*x*x);
+                double y_distorted = y*(1+k1*r2+k2*r4)+p1*(r2+2*y*y)+2*p2*x*y;
+
+                u_distorted = fx*x_distorted+cx;
+                v_distorted = fy*y_distorted+cy;
+
+                // end your code here
+
+                // 赋值 (最近邻插值)
+                if (u_distorted &amp;gt;= 0 &amp;amp;&amp;amp; v_distorted &amp;gt;= 0 &amp;amp;&amp;amp; u_distorted &amp;lt; cols &amp;amp;&amp;amp; v_distorted &amp;lt; rows) 
+                {
+                    image_undistort.at&amp;lt;uchar&amp;gt;(v, u) = image.at&amp;lt;uchar&amp;gt;((int) v_distorted, (int) u_distorted);
+                }
+                else 
+                {
+                    image_undistort.at&amp;lt;uchar&amp;gt;(v, u) = 0;
+                }
+            }
+        }
+        // 画图去畸变后图像
+        cv::imwrite(&amp;quot;../../result.png&amp;quot;, image_undistort);
+        cv::imshow(&amp;quot;image undistorted&amp;quot;, image_undistort);
+        cv::waitKey();
+        return 0;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;习题二-双目视差的使用&#34;&gt;习题二：双目视差的使用&lt;/h2&gt;
+
+&lt;p&gt;双目相机的一大好处是可以通过左右目的视差来恢复深度。课程中我们介绍了由视差计算深度的过程。本题,你需要根据视差计算深度,进而生成点云数据。本题的数据来自 Kitti 数据集。&lt;br /&gt;
+Kitti 中的相机部分使用了一个双目模型。双目采集到左图和右图,然后我们可以通过左右视图恢复出深度。经典双目恢复深度的算法有 BM(Block Matching),SGBM(Semi-Global Matching)等,但本题不探讨立体视觉内容(那是一个大问题)。我们假设双目计算的视差已经给定,请你根据双目模型,画出图像对应的点云,并显示到 Pangolin 中。&lt;br /&gt;
+本题给定左右图、视差图。双目的参数如下:
+$$
+    f_x = 718.856, f_y = 718.856, c_x = 607.1928, c_y = 185.2157
+$$
+且双目左右间距(即基线)为:
+$$
+    d = 0.573 m
+$$
+请根据以上的参数，计算相机数据对应的点云，并显示到Pangolin中。&lt;/p&gt;
+
+&lt;h4 id=&#34;答案-1&#34;&gt;答案：&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;注意代码中&lt;code&gt;vector&amp;lt;Vector4d, Eigen::aligned_allocator&amp;lt;Vector4d&amp;gt;&amp;gt; pointcloud&lt;/code&gt;，其中&lt;code&gt;Eigen::aligned_allocator&amp;lt;Vector4d&amp;gt;&lt;/code&gt;是描述&lt;code&gt;vector&lt;/code&gt;中的&lt;code&gt;Allocator type&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;相机模型中使用的是坐标，而相应坐标里面的数值并没有考虑。&lt;/li&gt;
+&lt;li&gt;相机的模型中我们共用到四种坐标：世界坐标、相机坐标、归一化相机坐标和像素坐标。其中畸变模型是在归一化相机坐标上讨论的。对于具体的问题，需要考虑合适的正确的坐标对应关系。&lt;/li&gt;
+&lt;li&gt;视差图转为深度图信息,公式当中的量纲,双目图片两侧小部分没有视差信息。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;最终程序运行的结果（结果中是一个三维的图，前后重叠在一起了）：&lt;br /&gt;
+左右图如下所示：&lt;br /&gt;
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;../images/相机与图像/left.png&#34;  width=&#34;350&#34;/&gt;&lt;img src=&#34;../images/相机与图像/right.png&#34;  width=&#34;350&#34;/&gt;
+&lt;/div&gt;
+视差图如下所示：&lt;br /&gt;
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;../images/相机与图像/disparity.png&#34; width=&#34;500&#34;/&gt;
+&lt;/div&gt;
+最终生成的点云图如下所示：
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;../images/相机与图像/result1.png&#34; width=&#34;500&#34;/&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;完整程序链接：&lt;a href=&#34;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/disparity&#34;&gt;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/disparity&lt;/a&gt;&lt;br /&gt;
+代码如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    #include &amp;lt;opencv2/opencv.hpp&amp;gt;
+    #include &amp;lt;string&amp;gt;
+    #include &amp;lt;Eigen/Core&amp;gt;
+    #include &amp;lt;pangolin/pangolin.h&amp;gt;
+    #include &amp;lt;unistd.h&amp;gt;
+
+    using namespace std;
+    using namespace Eigen;
+
+    // 文件路径，如果不对，请调整
+    string left_file = &amp;quot;../../left.png&amp;quot;;
+    string right_file = &amp;quot;../../right.png&amp;quot;;
+    string disparity_file = &amp;quot;../../disparity.png&amp;quot;;
+
+    // 在panglin中画图，已写好，无需调整
+    void showPointCloud(const vector&amp;lt;Vector4d, Eigen::aligned_allocator&amp;lt;Vector4d&amp;gt;&amp;gt; &amp;amp;pointcloud);
+
+    int main(int argc, char **argv) {
+
+        // 内参
+        double fx = 718.856, fy = 718.856, cx = 607.1928, cy = 185.2157;
+        // 间距
+        double b = 0.573;
+
+        // 读取图像
+        cv::Mat left = cv::imread(left_file, 0);
+        cv::Mat right = cv::imread(right_file, 0);
+        cv::Mat disparity = cv::imread(disparity_file, 0); // disparty 为CV_8U,单位为像素
+
+        // 生成点云
+        vector&amp;lt;Vector4d, Eigen::aligned_allocator&amp;lt;Vector4d&amp;gt;&amp;gt; pointcloud;
+
+        // TODO 根据双目模型计算点云
+        // 如果你的机器慢，请把后面的v++和u++改成v+=2, u+=2
+        for (int v = 0; v &amp;lt; left.rows; v++)
+            for (int u = 0; u &amp;lt; left.cols; u++) {
+
+                Vector4d point(0, 0, 0, left.at&amp;lt;uchar&amp;gt;(v, u) / 255.0); // 前三维为xyz,第四维为颜色
+
+                // start your code here (~6 lines)
+                // 根据双目模型计算 point 的位置
+                uchar  d= disparity.at&amp;lt;uchar&amp;gt;(v,u);
+                point[2] = (fx*b)/d;
+                point[1] = point[2]*(v-cy)/fy;
+                point[0] = point[2]*(u-cx)/fx;
+                pointcloud.push_back(point);
+                // end your code here
+            }
+        cout&amp;lt;&amp;lt;&amp;quot;pointcloud size: &amp;quot;&amp;lt;&amp;lt;pointcloud.size()&amp;lt;&amp;lt;endl;
+        // 画出点云
+        showPointCloud(pointcloud);
+        return 0;
+    }
+
+    void showPointCloud(const vector&amp;lt;Vector4d, Eigen::aligned_allocator&amp;lt;Vector4d&amp;gt;&amp;gt; &amp;amp;pointcloud) {
+
+        if (pointcloud.empty()) {
+            cerr &amp;lt;&amp;lt; &amp;quot;Point cloud is empty!&amp;quot; &amp;lt;&amp;lt; endl;
+            return;
+        }
+
+        pangolin::CreateWindowAndBind(&amp;quot;Point Cloud Viewer&amp;quot;, 1024, 768);
+        glEnable(GL_DEPTH_TEST);
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+        pangolin::OpenGlRenderState s_cam(
+                pangolin::ProjectionMatrix(1024, 768, 500, 500, 512, 389, 0.1, 1000),
+                pangolin::ModelViewLookAt(0, -0.1, -1.8, 0, 0, 0, 0.0, -1.0, 0.0)
+        );
+
+        pangolin::View &amp;amp;d_cam = pangolin::CreateDisplay()
+                .SetBounds(0.0, 1.0, pangolin::Attach::Pix(175), 1.0, -1024.0f / 768.0f)
+                .SetHandler(new pangolin::Handler3D(s_cam));
+
+        while (pangolin::ShouldQuit() == false) {
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+            d_cam.Activate(s_cam);
+            glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+
+            glPointSize(2);
+            glBegin(GL_POINTS);
+            for (auto &amp;amp;p: pointcloud) {
+                glColor3f(p[3], p[3], p[3]);
+                glVertex3d(p[0], p[1], p[2]);
+            }
+            glEnd();
+            pangolin::FinishFrame();
+            usleep(5000);   // sleep 5 ms
+        }
+        return;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>终食之言--电影春节档</title>
       <link>https://xlmaverick.me/post/%E7%BB%88%E9%A3%9F%E4%B9%8B%E8%A8%80--%E7%94%B5%E5%BD%B1%E6%98%A5%E8%8A%82%E6%A1%A3/</link>
       <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
@@ -254,7 +791,7 @@ p3 = &amp;amp;p;//p3引用了一个指针，因此可以将地址赋给p3
 
 &lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
 
-&lt;p&gt;本学期，由于邹老师开设视觉定位的课程，我们组的大部分人基本每节课都在听，本次课程邹老师总共会设置六次大作业，应该难度不会很大。既然来上课了，所以就把相关的作业也做了。具体的代码和课件，我会放到自己的github上面：&lt;a href=&#34;https://github.com/XLMaverick/Visual-Localization-Percessing-Homework；&#34;&gt;https://github.com/XLMaverick/Visual-Localization-Percessing-Homework；&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;本学期，由于邹老师开设视觉定位的课程，我们组的大部分人基本每节课都在听，本次课程邹老师总共会设置六次大作业，应该难度不会很大。既然来上课了，所以就把相关的作业也做了。具体的代码和课件，我会放到自己的github上面：&lt;a href=&#34;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/homework_PPT_Zou_2018/Partial_code&#34;&gt;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/homework_PPT_Zou_2018/Partial_code&lt;/a&gt; ；&lt;br /&gt;
 第一次作业是Histogram Specialization，是图像处理中基本的操作了，要求是不能使用相关的函数库，具体的要求和代码如下所示：&lt;/p&gt;
 
 &lt;h3 id=&#34;作业要求&#34;&gt;作业要求&lt;/h3&gt;
@@ -265,13 +802,13 @@ p3 = &amp;amp;p;//p3引用了一个指针，因此可以将地址赋给p3
 &lt;li&gt;Consider two brightness mapping functions transform both histograms into a constant histogram:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;../images/Histogram-1.png&#34; alt=&#34;&#34; /&gt;{:height=&amp;ldquo;50%&amp;rdquo; width=&amp;ldquo;50%&amp;rdquo;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/视觉作业-1/Histogram-1.png&#34; alt=&#34;&#34; /&gt;{:height=&amp;ldquo;50%&amp;rdquo; width=&amp;ldquo;50%&amp;rdquo;}&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Algorithm:&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;../images/Histogram-2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/视觉作业-1/Histogram-2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;代码说明&#34;&gt;代码说明&lt;/h3&gt;
 
@@ -286,6 +823,8 @@ cd build&lt;br /&gt;
 cmake ..&lt;br /&gt;
 make&lt;br /&gt;
 ./Histogram_specialization&lt;/p&gt;
+
+&lt;p&gt;完整程序链接：&lt;a href=&#34;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/homework_PPT_Zou_2018/Partial_code&#34;&gt;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/homework_PPT_Zou_2018/Partial_code&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>

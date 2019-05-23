@@ -7,7 +7,7 @@ tags: ['git']
 categories: ['others']
 author: "Yang"
 comment: true
-toc: false
+toc: true
 autoCollapseToc: true
 contentCopyright: '<a href="https://github.com/gohugoio/hugoBasicExample" rel="noopener" target="_blank">See origin</a>'
 reward: false

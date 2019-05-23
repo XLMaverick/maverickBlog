@@ -61,7 +61,7 @@
 <meta property="og:description" content="Hugo theme jane example site." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://xlmaverick.me/categories/slam/" />
-<meta property="og:updated_time" content="2018-10-04T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-04-30T00:00:00&#43;00:00"/>
 <meta itemprop="name" content="Slam">
 <meta itemprop="description" content="Hugo theme jane example site.">
 
@@ -81,6 +81,41 @@
 
 
 
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
 </head>
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
@@ -287,6 +322,28 @@
     
   
 
+  
+    <div class="archive-post">
+      <time datetime="2019-04-30" class="archive-post-time">
+        2019-04-30
+      </time>
+      <span class="archive-post-title">
+        <a href="/post/%E9%9D%9E%E7%BA%BF%E6%80%A7%E4%BC%98%E5%8C%96/" class="archive-post-link">
+          非线性优化
+        </a>
+      </span>
+    </div>
+  
+    <div class="archive-post">
+      <time datetime="2019-04-29" class="archive-post-time">
+        2019-04-29
+      </time>
+      <span class="archive-post-title">
+        <a href="/post/%E7%9B%B8%E6%9C%BA%E4%B8%8E%E5%9B%BE%E5%83%8F/" class="archive-post-link">
+          相机与图像
+        </a>
+      </span>
+    </div>
   
     <div class="archive-post">
       <time datetime="2018-10-04" class="archive-post-time">
