@@ -20,13 +20,20 @@
       
         <description>
 
-&lt;h2 id=&#34;本站架构&#34;&gt;本站架构&lt;/h2&gt;
+&lt;h3 id=&#34;我&#34;&gt;我&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Email：　yangxl0319@163.com&lt;/li&gt;
+&lt;li&gt;Education： 上海交通大学(硕士) 　　国防科学技术大学（本科）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;本站架构&#34;&gt;本站架构&lt;/h3&gt;
 
 &lt;p&gt;本站目前采用&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;作为后台系统，并且使用&lt;a href=&#34;https://www.netlify.com/&#34;&gt;Netlify&lt;/a&gt;进行部署。&lt;/p&gt;
 
-&lt;p&gt;博客的主题模板是从Hugo官方网站上面&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even&#34;&gt;下载&lt;/a&gt;的，在主页的搭建过程中，参考了同实验室朱一帆、王兆圣的博客，同时友情链接里面相关的链接。&lt;/p&gt;
+&lt;p&gt;博客的主题模板是从Hugo官方网站上面&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even&#34;&gt;下载&lt;/a&gt;的，在主页的搭建过程中，参考了同实验室&lt;a href=&#34;https://www.drifter.fun/&#34;&gt;朱一帆&lt;/a&gt;、&lt;a href=&#34;http://www.aintk.xyz/&#34;&gt;王兆圣&lt;/a&gt;的博客，同时友情链接里面相关的链接。&lt;/p&gt;
 
-&lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;/h2&gt;
+&lt;h3 id=&#34;常见问题&#34;&gt;常见问题&lt;/h3&gt;
 
 &lt;p&gt;本列表特整理重复度很高的问题，供新来者参考。&lt;/p&gt;
 
@@ -34,7 +41,11 @@
 
 &lt;p&gt;回答： &lt;a href=&#34;https://xlmaverick.me/post/2018/07/07/rss添加/&#34;&gt;可参看这篇博客&lt;/a&gt;，需要利用RSS阅读器。&lt;/p&gt;
 
-&lt;h2 id=&#34;友情链接&#34;&gt;友情链接　　　　　　　　　　　　&lt;/h2&gt;
+&lt;p&gt;2.评论显示异常以及不能正常评论。&lt;/p&gt;
+
+&lt;p&gt;回答： 注意本站采用的评论系统是 Disqus，在国内需要翻墙才能使用。&lt;/p&gt;
+
+&lt;h3 id=&#34;友情链接&#34;&gt;友情链接　　　　　　　　　　　　&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.aintk.xyz/&#34;&gt;&lt;strong&gt;隔壁老王&lt;/strong&gt;&lt;/a&gt; 　　　&lt;a href=&#34;https://www.drifter.fun/&#34;&gt;&lt;strong&gt;喜提宝马的朱总&lt;/strong&gt;&lt;/a&gt; 　　　&lt;a href=&#34;https://www.bloodbaby.tech/&#34;&gt;&lt;strong&gt;十亩之间&lt;/strong&gt;&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
@@ -504,6 +515,369 @@ void OpticalFlowMultiLevel(
     // don&#39;t forget to set the results into kp2
 }
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>视觉里程计1</title>
+      <link>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;视觉里程计1&#34;&gt;视觉里程计1&lt;/h1&gt;
+
+&lt;h2 id=&#34;习题二-从e恢复r-t&#34;&gt;习题二：从E恢复R，t&lt;/h2&gt;
+
+&lt;p&gt;我们在书中讲到了单目对极几何部分，可以通过本质矩阵E，得到旋转和平移R，t，但那时直接使用了OpenCV提供的函数。本题中，请你根据数学原理，完成从E到R，t的计算。程序框架见&lt;code&gt;code/E2Rt.cpp&lt;/code&gt;。&lt;br /&gt;
+设Essential矩阵E的取值为(与书上实验数值相同):&lt;/p&gt;
+
+&lt;p&gt;
+$$
+E=\begin{bmatrix} −0.0203618550523477 &amp; −0.4007110038118445 &amp; −0.03324074249824097 \\ 0.3939270778216369 &amp; −0.03506401846698079 &amp; 0.5857110303721015 \\ −0.006788487241438284 &amp; −0.5815434272915686 &amp;−0.01438258684486258 \\ \end{bmatrix} 
+$$
+&lt;/p&gt;
+
+&lt;p&gt;请计算对应的R，t，流程如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;对E作SVD分解：
+$$
+E = U \Sigma V^T
+$$&lt;/li&gt;
+&lt;li&gt;处理$\Sigma$的奇异值。设$\Sigma = diag(\sigma_1,\sigma_2,\sigma_3)$，并且$\sigma_1 \geq \sigma_2 \geq \sigma_3$，那么处理后的$\Sigma$为：
+$$
+\Sigma = diag(\frac{\sigma_1 + \sigma_2}{2}, \frac{\sigma_1 + \sigma_2}{2}, 0)
+$$&lt;/li&gt;
+&lt;li&gt;共存在四个可能的解：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+$$
+t_1^{∧} = UR_{Z(\frac{\pi}{2})}\Sigma U^T, R_1 = UR_{Z(\frac{\pi}{2})}V^T  \\
+t_2^{∧} = UR_{Z(-\frac{\pi}{2})}\Sigma U^T, R_2 = UR_{Z(-\frac{\pi}{2})}V^T  
+$$
+&lt;/p&gt;
+
+&lt;p&gt;其中$R_{Z(\frac{\pi}{2})}$表示沿Z轴旋转90度得到的旋转矩阵。同时，由于-E和E等价，所以对任意的一个t或R取负号，也会得到同样的结果。因此，从E分解到t，R时，一共存在四个可能的解。请打印出这四个可能的R，t。&lt;/p&gt;
+
+&lt;h3 id=&#34;提示&#34;&gt;提示&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;用&lt;code&gt;AngleAxis&lt;/code&gt;或&lt;code&gt;Sophus::SO3&lt;/code&gt;计算$R_{Z(\frac{\pi}{2})}$。&lt;/li&gt;
+&lt;li&gt;实际当中，可以利用深度值判断哪个解是真正的解，不过本题不作要求，只需打印四个可能的解即可。同时，你也可以验证$t^∧R$应该与E只差一个乘法因子，并且与书上的实验结果亦只差一个乘法因子。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;答案&#34;&gt;答案&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;本质矩阵&lt;code&gt;E&lt;/code&gt;的奇异值必定是$[\sigma , \sigma , 0]$，这是本质矩阵的内在性质。&lt;/li&gt;
+&lt;li&gt;本质矩阵 $E = t^{\bigwedge} *R$，但是由于尺度等价性，他的自由度只有5。&lt;/li&gt;
+&lt;li&gt;此处还得注意本质矩阵和但应矩阵的对比，这一点后续还会补充。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;最终的结果为：
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;../images/视觉里程计1/result.png&#34;&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;完整程序链接：&lt;a href=&#34;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/computerRt&#34;&gt;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/computerRt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;相关代码为&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    int main(int argc, char **argv) {
+
+        // 给定Essential矩阵
+        Matrix3d E;
+        E &amp;lt;&amp;lt; -0.0203618550523477, -0.4007110038118445, -0.03324074249824097,
+                0.3939270778216369, -0.03506401846698079, 0.5857110303721015,
+                -0.006788487241438284, -0.5815434272915686, -0.01438258684486258;
+
+        // 待计算的R,t
+        Matrix3d R;
+        Vector3d t;
+
+        JacobiSVD&amp;lt;MatrixXd&amp;gt; svd(E,ComputeThinU | ComputeThinV);
+        Matrix3d U = svd.matrixU();
+        Matrix3d V = svd.matrixV();
+        Matrix3d Sigma = U.inverse()*E*V.transpose().inverse();
+        // cout&amp;lt;&amp;lt;&amp;quot;U:\n&amp;quot;&amp;lt;&amp;lt;U&amp;lt;&amp;lt;&amp;quot;\nV:\n&amp;quot;&amp;lt;&amp;lt;V&amp;lt;&amp;lt;&amp;quot;\nSigma:\n&amp;quot;&amp;lt;&amp;lt;Sigma&amp;lt;&amp;lt;endl;
+        vector&amp;lt;double&amp;gt;  tao = {Sigma(0,0),Sigma(1,1),Sigma(2,2)};
+        sort(tao.begin(), tao.end());
+        Matrix3d SigmaFix = Matrix3d::Zero();
+        double tao_mead = (tao[1]+tao[2])*0.5;
+        SigmaFix(0,0) = tao_mead;
+        SigmaFix(1,1) = tao_mead;
+        cout&amp;lt;&amp;lt;&amp;quot;Sigma after fix: \n&amp;quot;&amp;lt;&amp;lt;SigmaFix&amp;lt;&amp;lt;endl;
+
+        Matrix3d R_Z1 = AngleAxisd(M_PI/2, Vector3d(0,0,1)).matrix();
+        Matrix3d R_Z2 = AngleAxisd(-M_PI/2, Vector3d(0,0,1)).matrix();
+
+        Matrix3d t_wedge1 = U*R_Z1*SigmaFix*U.transpose();
+        Matrix3d t_wedge2 = U*R_Z2*SigmaFix*U.transpose();
+
+        Matrix3d R1 = U*R_Z1*V.transpose();
+        Matrix3d R2 = U*R_Z2*V.transpose(); 
+
+
+        cout &amp;lt;&amp;lt; &amp;quot;R1 = &amp;quot; &amp;lt;&amp;lt; endl&amp;lt;&amp;lt;R1 &amp;lt;&amp;lt; endl;
+        cout &amp;lt;&amp;lt; &amp;quot;R2 = &amp;quot; &amp;lt;&amp;lt; endl&amp;lt;&amp;lt;R2 &amp;lt;&amp;lt; endl;
+        cout &amp;lt;&amp;lt; &amp;quot;t1 = &amp;quot; &amp;lt;&amp;lt;endl&amp;lt;&amp;lt; Sophus::SO3::vee(t_wedge1) &amp;lt;&amp;lt; endl;
+        cout &amp;lt;&amp;lt; &amp;quot;t2 = &amp;quot; &amp;lt;&amp;lt;endl&amp;lt;&amp;lt; Sophus::SO3::vee(t_wedge2) &amp;lt;&amp;lt; endl;
+
+        // check t^R=E up to scale
+        Matrix3d tR = t_wedge1 * R1;
+        cout &amp;lt;&amp;lt; &amp;quot;t^R = &amp;quot; &amp;lt;&amp;lt; tR &amp;lt;&amp;lt; endl;
+
+        return 0;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;习题三-用g-n实现bundle-adjustment&#34;&gt;习题三：用G-N实现Bundle Adjustment&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;Bundle Adjustment&lt;/code&gt;并不神秘，它仅是一个目标函数为重投影误差的最小二乘。我们演示了&lt;code&gt;Bundle Adjustment&lt;/code&gt;可以由&lt;code&gt;Ceres&lt;/code&gt;和&lt;code&gt;g2o&lt;/code&gt;实现，并可用于&lt;code&gt;PnP&lt;/code&gt;当中的位姿估计。本题，你需要自己书写一个高斯牛顿法，实现用&lt;code&gt;Bundle Adjustment&lt;/code&gt;优化位姿的功能，求出相机位姿。严格来说，这是&lt;code&gt;Bundle Adjustment&lt;/code&gt;的一部分，因为我们仅考虑了位姿，没有考虑点的更新。完整的BA需要用到矩阵的稀疏性，我们留到第七节课介绍。&lt;br /&gt;
+假设一组点的3D坐标为$P = {p_i}$，它们在相机中的坐标为$U = {u_i},∀i = 1, &amp;hellip; n$。在文件 &lt;code&gt;p3d.txt&lt;/code&gt;和&lt;code&gt;p2d.txt&lt;/code&gt;中给出了这两组点的值。同时，设待估计的位姿为$T ∈ SE(3)$，内参矩阵为：&lt;/p&gt;
+
+&lt;p&gt;$$
+K =  \begin{bmatrix} 520.9 &amp;amp; 0 &amp;amp; 325.1 \\
+                     521.0 &amp;amp; 249.7 &amp;amp; 0 \\
+                     1 &amp;amp; 0 &amp;amp; 0\&lt;br /&gt;
+                     \end{bmatrix}
+$$&lt;/p&gt;
+
+&lt;p&gt;请你根据上述条件，用G-N法求出最优位姿，初始估计为$T_0 = I$。程序&lt;code&gt;GN-BA.cpp&lt;/code&gt;文件提供了大致的框架,请填写剩下的内容。
+在书写程序过程中,回答下列问题:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;如何定义重投影误差?&lt;/li&gt;
+&lt;li&gt;该误差关于自变量的雅可比矩阵是什么?&lt;/li&gt;
+&lt;li&gt;解出更新量之后,如何更新至之前的估计上?&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;作为验证,最后估计得到的位姿应该接近:&lt;/p&gt;
+
+&lt;p&gt;
+$$
+T^* = \begin{bmatrix} 0.9978 &amp; 0.0506 &amp; 0.0399 &amp; −0.1272 \\\\
+                      0.0506 &amp;  0.9983 &amp; 0.0274 &amp; −0.007 \\\\
+                      −0.0412 &amp; −0.0253 &amp; 0.9977 &amp; 0.0617 \\\\
+                       0 &amp; 0 &amp; 0 &amp; 1 \\\\
+                        \end{bmatrix}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;这和书中使用&lt;code&gt;g2o&lt;/code&gt;优化的结果很接近。&lt;/p&gt;
+
+&lt;h3 id=&#34;答案-1&#34;&gt;答案&lt;/h3&gt;
+
+&lt;p&gt;1.首先我们需要明白&lt;code&gt;PnP&lt;/code&gt;问题是的已知条件&lt;code&gt;3D&lt;/code&gt;点以及在图像中的投影坐标，整个误差函数的简历是相机模型中坐标系的变换，利用归一化坐标系下的坐标作为中间变量，链式求导，进而求解雅各比矩阵的。整个过程是针对一帧而言。这和直接法中的不一样，直接法是前后两帧。&lt;br /&gt;
+重投影误差定义为：&lt;/p&gt;
+
+&lt;p&gt;
+$$
+e(\xi)=P_{u v}-\frac{1}{z_{c}} \operatorname{Kexp}\left(\xi^{\wedge}\right) P_{w}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;2.关于误差的雅各比矩阵有两部分组成，误差关于重投影点的导数、变换后的点关于李代数的导数：&lt;/p&gt;
+
+&lt;p&gt;
+$$
+J(\xi)=-\left[ \begin{array}{ccccc}{\frac{f_{x}}{z_{c}}} &amp; {0} &amp; {-\frac{f_{x} x_{c}}{z_{c}^{2}}} &amp; {-\frac{f_{x} x_{c} y_{c}}{z_{c}^{2}}} &amp; {f_{x}+\frac{f_{x} x_{c}^{2}}{Z_{c}^{2}}} &amp; {-\frac{f_{x} y_{c}}{z_{c}}} \\ {0} &amp; {\frac{f_{y}}{z_{c}}} &amp; {-\frac{f_{y} y_{c}}{z_{c}^{2}}} &amp; {-f_{y}-\frac{f_{y} y_{c}^{2}}{z_{c}^{2}}} &amp; {\frac{f_{y} x_{c} y_{c}}{z_{c}^{2}}} &amp; {\frac{f_{y} x_{c}}{z_{c}}}\end{array}\right]
+$$
+&lt;/p&gt;
+
+&lt;p&gt;3.解出更新量之后，更新至之前的估计上有两种方式，李代数上或者在变换矩阵上：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    T21 = Sophus::SE3::exp(update) * T21;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    Vector6d T_origin = T_esti.log();
+    Vector6d T_se = (T_origin + dx);
+    T_esti = Sophus::SE3::exp(T_se);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最终结果为：
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;../images/视觉里程计1/result-ba.png&#34;&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;完整程序链接：&lt;a href=&#34;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/BApnp&#34;&gt;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/BApnp&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;相关代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    int main(int argc, char **argv) {
+        VecVector2d p2d;
+        VecVector3d p3d;
+        Matrix3d K;
+        double fx = 520.9, fy = 521.0, cx = 325.1, cy = 249.7;
+        K &amp;lt;&amp;lt; fx, 0, cx, 0, fy, cy, 0, 0, 1;
+
+        ifstream p3dfile;
+        p3dfile.open(p3d_file);
+        if(!p3dfile)
+        {
+            cout&amp;lt;&amp;lt;&amp;quot;open p3d.txt error!&amp;quot;&amp;lt;&amp;lt;endl;
+        }
+        string p3dline;
+        while(getline(p3dfile,p3dline) &amp;amp;&amp;amp; !p3dline.empty())
+        {
+            istringstream p3dtempLine(p3dline);
+            Vector3d p3dtemp;
+            p3dtempLine&amp;gt;&amp;gt;p3dtemp[0]&amp;gt;&amp;gt;p3dtemp[1]&amp;gt;&amp;gt;p3dtemp[2];
+            p3d.push_back(p3dtemp);
+            
+        }        
+        ifstream p2dfile;
+        p2dfile.open(p2d_file);
+        if(!p2dfile)
+        {
+            cout&amp;lt;&amp;lt;&amp;quot;open p2d.txt error!&amp;quot;&amp;lt;&amp;lt;endl;
+        }
+        string p2dline;
+        while(getline(p2dfile,p2dline) &amp;amp;&amp;amp; !p2dline.empty())
+        {
+            istringstream p2dtempLine(p2dline);
+            Vector2d p2dtemp;
+            p2dtempLine&amp;gt;&amp;gt;p2dtemp[0]&amp;gt;&amp;gt;p2dtemp[1];
+            p2d.push_back(p2dtemp);
+            
+        }
+        assert(p3d.size() == p2d.size());
+        int iterations = 100;
+        double cost = 0, lastCost = 0;
+        int nPoints = p3d.size();
+        cout &amp;lt;&amp;lt; &amp;quot;points: &amp;quot; &amp;lt;&amp;lt; nPoints &amp;lt;&amp;lt; endl;
+        Sophus::SE3 T_esti(Matrix3d::Identity(),Vector3d::Zero()); // estimated pose
+        for (int iter = 0; iter &amp;lt; iterations; iter++) 
+        {
+            Matrix&amp;lt;double, 6, 6&amp;gt; H = Matrix&amp;lt;double, 6, 6&amp;gt;::Zero();
+            Vector6d b = Vector6d::Zero();
+            Vector2d e;
+            cost = 0;
+            for (int i = 0; i &amp;lt; nPoints; i++) 
+            {
+                Vector3d pc = T_esti*p3d[i];
+                Vector3d e_temp = Vector3d(p2d[i][0],p2d[i][1],1) - K*pc/pc[2];
+                e[0] = e_temp[0];
+                e[1] = e_temp[1];
+                cost  += 0.5*e.transpose()*e; 
+                double x = pc[0], y = pc[1], z = pc[2];
+                Matrix&amp;lt;double, 2, 6&amp;gt; J;
+                J(0,0) = -fx/z;
+                J(0,2) = fx*x/(z*z);
+                J(0,3) = fx*x*y/(z*z);
+                J(0,4) = -fx - fx*(x*x)/(z*z);
+                J(0,5) =  fx*y/z;
+                J(1,1) = -fy/z;
+                J(1,2) = fy*y/(z*z);
+                J(1,3) = fy+fy*(y*y)/(z*z);
+                J(1,4) = -fy*x*y/(z*z);
+                J(1,5) = -fy*x/z;
+
+                H +=J.transpose()*J;
+                b +=-J.transpose()*e;
+            }
+            Vector6d dx;
+            dx = H.ldlt().solve(b);
+
+            if (isnan(dx[0])) 
+            {
+                cout &amp;lt;&amp;lt; &amp;quot;result is nan!&amp;quot; &amp;lt;&amp;lt; endl;
+                break;
+            }
+            if (iter &amp;gt; 0 &amp;amp;&amp;amp; cost &amp;gt;= lastCost) 
+            {
+                // cost increase, update is not good
+                cout &amp;lt;&amp;lt; &amp;quot;cost: &amp;quot; &amp;lt;&amp;lt; cost &amp;lt;&amp;lt; &amp;quot;, last cost: &amp;quot; &amp;lt;&amp;lt; lastCost &amp;lt;&amp;lt; endl;
+                break;
+            }
+            T_esti = Sophus::SE3::exp(dx)*T_esti;            
+            lastCost = cost;
+            cout &amp;lt;&amp;lt; &amp;quot;iteration &amp;quot; &amp;lt;&amp;lt; iter &amp;lt;&amp;lt; &amp;quot; cost=&amp;quot; &amp;lt;&amp;lt; cout.precision(12) &amp;lt;&amp;lt; cost &amp;lt;&amp;lt; endl;
+        }
+        cout &amp;lt;&amp;lt; &amp;quot;estimated pose: \n&amp;quot; &amp;lt;&amp;lt; T_esti.matrix() &amp;lt;&amp;lt; endl;
+        return 0;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;习题三-用icp实现轨迹对齐&#34;&gt;习题三：用ICP实现轨迹对齐&lt;/h2&gt;
+
+&lt;p&gt;在实际当中，我们经常需要比较两条轨迹之间的误差。第三节课习题中，你已经完成了两条轨迹之间的&lt;code&gt;RMSE&lt;/code&gt; 误差计算。但是，由于&lt;code&gt;ground-truth&lt;/code&gt;轨迹与相机轨迹很可能不在一个参考系中，它们得到的轨迹并不能直接比较。这时，我们可以用&lt;code&gt;ICP&lt;/code&gt;来计算两条轨迹之间的相对旋转与平移，从而估计出两个参考系之间的差异。
+设真实轨迹为 $T_ g$ ，估计轨迹为 $T_ e$ ，二者皆以 $T_ {WC}$ 格式存储。但是真实轨迹的坐标原点定义于外部
+某参考系中（取决于真实轨迹的采集方式，如&lt;code&gt;Vicon&lt;/code&gt;系统可能以某摄像头中心为参考系，而估计轨迹则以相机出发点为参考系（在视觉&lt;code&gt;SLAM&lt;/code&gt;中很常见）。由于这个原因，理论上的真实轨迹点与估计轨迹点应满足：&lt;/p&gt;
+
+&lt;p&gt;
+$$
+\mathbf{T}_{g, i}=\mathbf{T}_{g e} \mathbf{T}_{e, i}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;其中&lt;code&gt;i&lt;/code&gt;表示轨迹中的第&lt;code&gt;i&lt;/code&gt;条记录，$T_ {ge} ∈ SE(3)$为两个坐标系之间的变换矩阵，该矩阵在整条轨迹中保持不变。$T_ {ge}$可以通过两条轨迹数据估计得到，但方法可能有若干种：&lt;/p&gt;
+
+&lt;p&gt;1.认为初始化时两个坐标系的差异就是$T_{ge}，即：&lt;/p&gt;
+
+&lt;p&gt;
+$$
+\mathbf{T}_{g e}=\mathbf{T}_{g, 1} \mathbf{T}_{e, 1}^{-1}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;2.在整条轨迹上利用最小二乘计算$T_ge$：&lt;/p&gt;
+
+&lt;p&gt;
+$$
+\mathbf{T}_{g e}=\arg \min _{\mathbf{T}_{g c}} \sum_{i=1}^{n}\left\|\log \left(\mathbf{T}_{g i}^{-1} \mathbf{T}_{g e} \mathbf{T}_{e, i}\right)^{\mathrm{v}}\right\|_{2}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;3.把两条轨迹的平移部分看作点集，然后求点集之间的&lt;code&gt;ICP&lt;/code&gt;，得到两组点之间的变换。&lt;/p&gt;
+
+&lt;p&gt;其中第三种也是实践中用的最广的一种。现在请你书写&lt;code&gt;ICP&lt;/code&gt;程序，估计两条轨迹之间的差异。轨迹文
+件在&lt;code&gt;compare.txt&lt;/code&gt;文件中，格式为：&lt;/p&gt;
+
+&lt;p&gt;
+$$
+_{e}, \mathbf{t}_{e}, \mathbf{q}_{e}, \text { time }_{g}, \mathbf{t}_{g}, \mathbf{q}_{g}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;其中&lt;code&gt;t&lt;/code&gt;表示平移，&lt;code&gt;q&lt;/code&gt;表示单位四元数。请计算两条轨迹之间的变换，然后将它们统一到一个参考系，并画在&lt;code&gt;pangolin&lt;/code&gt;中。轨迹的格式与先前相同，即以时间，平移，旋转四元数方式存储。
+本题不提供代码框架,你可以利用之前的作业完成本题。&lt;/p&gt;
+
+&lt;h3 id=&#34;答案-2&#34;&gt;答案：&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;ICP&lt;/code&gt;有两种解决办法，&lt;code&gt;SVD&lt;/code&gt;和非线性优化的方法，这一次我们尝试两种办法，其中非线性优化的方法我们采用&lt;code&gt;g2o&lt;/code&gt;优化库。&lt;/li&gt;
+&lt;li&gt;画图部分依然采用&lt;code&gt;pangolin&lt;/code&gt;，和前几讲的方式一样。&lt;/li&gt;
+&lt;li&gt;g2o的版本问题需要注意，最新版本有些地方是不兼容的。&lt;/li&gt;
+&lt;li&gt;还是g2o的问题，g2o中李代数的定义顺序和我们一样不一样。通常前三维为平移，后三维为旋转，但是&lt;code&gt;g2o&lt;/code&gt;的李代数和&lt;code&gt;Sohpus&lt;/code&gt;的李代数定义就不一样，g2o中是前三维为旋转，后三维为平移，所以对应的雅各比矩阵交换了顺序，这一点尤其需要注意。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;首先是SVD方法的结果：
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;../images/视觉里程计1/原始图像.png&#34; width=&#39;350&#39;&gt; &lt;img src=&#34;../images/视觉里程计1/svd_result.png&#34; width=&#39;350&#39;&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;../images/视觉里程计1/svd_result1.png&#34;&gt;
+&lt;/div&gt;
+
+&lt;p&gt;非线性优化的结果：
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;../images/视觉里程计1/原始图像.png&#34; width=&#39;350&#39;&gt; &lt;img src=&#34;../images/视觉里程计1/ba_result.png&#34; width=&#39;350&#39;&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;../images/视觉里程计1/ba_result1.png&#34;&gt;
+&lt;/div&gt;
+
+&lt;p&gt;完整程序链接：&lt;a href=&#34;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/icp&#34;&gt;https://github.com/XLMaverick/Visual-Localization-Percessing/tree/master/vslam_fourteen_lectures/icp&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>

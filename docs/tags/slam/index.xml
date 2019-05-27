@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>视觉里程计1</title>
+      <link>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11/</guid>
+      <description>视觉里程计1 习题二：从E恢复R，t 我们在书中讲到了单目对极几何部分，可以通过本质矩阵E，得到旋转和平移R，t，但那时直接使用了OpenCV提</description>
+    </item>
+    
+    <item>
       <title>视觉里程计1-ORB</title>
       <link>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11-orb/</link>
       <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
