@@ -65,6 +65,8 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   keywords = ["Hugo", "theme","jane"]
   description = "Hugo theme jane example site."
 
+  archive-paginate = 30
+
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
 
@@ -74,10 +76,23 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
+
+
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
+
+
+  [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
+    enable = false
+
+  [params.counter.leancloud]  # Chinese leancloud visitor counter  # leancloud 计数器
+    enable = true
+    appId = "L1Y08x6DoPUETcsGl1esNXJp-gzGzoHsz"
+    appKey = "wqmpINfqc3gXUrss93yVtQOa"
+
+
 
   [params.social]                                         # 社交链接
     a-email = "mailto:yangxl0319@163.com"
