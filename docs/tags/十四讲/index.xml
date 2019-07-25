@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>十四讲 on XLMaverick - garabatear of yang</title>
+    <link>https://xlmaverick.me/tags/%E5%8D%81%E5%9B%9B%E8%AE%B2/</link>
+    <description>Recent content in 十四讲 on XLMaverick - garabatear of yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 16 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xlmaverick.me/tags/%E5%8D%81%E5%9B%9B%E8%AE%B2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>视觉里程计2</title>
+      <link>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A12/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A12/</guid>
+      <description>视觉里程计2 习题二：直接法 2.1 单层直接法 我们说直接法是光流的直观拓展。在光流中，我们估计的是每个像素的平移(在additive的情况下)。而在</description>
+    </item>
+    
+    <item>
+      <title>视觉里程计2-LK</title>
+      <link>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A12-lk/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A12-lk/</guid>
+      <description>视觉里程计2 习题一：LK光流法 1.1 光流文献综述 我们课上演示了Lucas-Kanade稀疏光流，用OpenCV函数实现了光流法追踪特征点。实际上</description>
+    </item>
+    
+    <item>
+      <title>视觉里程计1</title>
+      <link>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11/</guid>
+      <description>视觉里程计1 习题二：从E恢复R，t 我们在书中讲到了单目对极几何部分，可以通过本质矩阵E，得到旋转和平移R，t，但那时直接使用了OpenCV提</description>
+    </item>
+    
+    <item>
+      <title>视觉里程计1-ORB</title>
+      <link>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11-orb/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11-orb/</guid>
+      <description>视觉里程计1 习题一：ORB特征点 ORB(Oriented FAST and BRIEF)特征是SLAM中一种很常用的特征,由于其二进制特性,使得它可以非常快速地提取与计算。下面,</description>
+    </item>
+    
+    <item>
+      <title>非线性优化</title>
+      <link>https://xlmaverick.me/post/%E9%9D%9E%E7%BA%BF%E6%80%A7%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E9%9D%9E%E7%BA%BF%E6%80%A7%E4%BC%98%E5%8C%96/</guid>
+      <description>非线性优化 习题一：矩阵微分 在优化中经常会遇到矩阵微分的问题。例如,当自变量为向量$x$,求标量函数$u(x)$对$x$的导数时,即为矩阵微分</description>
+    </item>
+    
+    <item>
+      <title>相机与图像</title>
+      <link>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E4%B8%8E%E5%9B%BE%E5%83%8F/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E4%B8%8E%E5%9B%BE%E5%83%8F/</guid>
+      <description>相机与图像 习题一：图像去畸变 现实生活中的图像总存在畸变。原则上来说,针孔透视相机应该将三维世界中的直线投影成直线,但是当我们使用广角和鱼眼镜</description>
+    </item>
+    
+  </channel>
+</rss>

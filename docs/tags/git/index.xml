@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on XLMaverick - garabatear of yang</title>
+    <link>https://xlmaverick.me/tags/git/</link>
+    <description>Recent content in Git on XLMaverick - garabatear of yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 13 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xlmaverick.me/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>github的问题</title>
+      <link>https://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description>git 提交github后文件夹为灰颜色问题 因为使用git clone 之后，文件夹里面会包含原来相关的信息，所以重新push之后会显示灰颜色。解决方案： * 删</description>
+    </item>
+    
+  </channel>
+</rss>

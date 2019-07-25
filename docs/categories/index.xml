@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on XLMaverick - garabatear of yang</title>
+    <link>https://xlmaverick.me/categories/</link>
+    <description>Recent content in Categories on XLMaverick - garabatear of yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+	<atom:link href="https://xlmaverick.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coding</title>
+      <link>https://xlmaverick.me/categories/coding/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/categories/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cv</title>
+      <link>https://xlmaverick.me/categories/cv/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/categories/cv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Others</title>
+      <link>https://xlmaverick.me/categories/others/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/categories/others/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slam</title>
+      <link>https://xlmaverick.me/categories/slam/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/categories/slam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>随笔</title>
+      <link>https://xlmaverick.me/categories/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

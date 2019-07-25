@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cv on XLMaverick - garabatear of yang</title>
+    <link>https://xlmaverick.me/tags/cv/</link>
+    <description>Recent content in Cv on XLMaverick - garabatear of yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xlmaverick.me/tags/cv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Median Flow tracker 中值流跟踪</title>
+      <link>https://xlmaverick.me/post/%E4%B8%AD%E5%80%BC%E6%B5%81%E8%B7%9F%E8%B8%AA-medianflow/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E4%B8%AD%E5%80%BC%E6%B5%81%E8%B7%9F%E8%B8%AA-medianflow/</guid>
+      <description>Median Flow tracker 中值流跟踪 中值流跟踪算法，是属于TLD跟踪算法中的Tracking部分。它是基于LK光流跟踪算法的基础上，使用FB（正向、反向评估点追</description>
+    </item>
+    
+  </channel>
+</rss>

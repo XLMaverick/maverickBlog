@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on XLMaverick - garabatear of yang</title>
+    <link>https://xlmaverick.me/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on XLMaverick - garabatear of yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 26 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xlmaverick.me/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>C&#43;&#43;基础知识--变量和基本类型2</title>
+      <link>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B2/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B2/</guid>
+      <description>string vector array string 1、using的声明最好不要放到头文件中，因为很多地方包含头文件，容易造成命名空间冲突。 2、string对象会自动忽略开头处的空白，</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;基础知识--变量和基本类型1</title>
+      <link>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B1/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/c&#43;&#43;%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86--%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B1/</guid>
+      <description>变量和基本类型 1、执行浮点运算选用double，以为float通常精度不够而且双精度浮点数和单精度浮点数的计算代价相差无几，甚至某些机器上，</description>
+    </item>
+    
+  </channel>
+</rss>
