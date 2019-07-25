@@ -85,7 +85,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
 
 
   [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
-    enable = false
+    enable = true
 
   [params.counter.leancloud]  # Chinese leancloud visitor counter  # leancloud 计数器
     enable = true
