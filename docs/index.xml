@@ -24,7 +24,9 @@
 
 &lt;ul&gt;
 &lt;li&gt;联系：　yangxl0319@163.com&lt;/li&gt;
-&lt;li&gt;教育： 上海交通大学(硕士) 　　国防科学技术大学（本科）&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;教育： 上海交通大学(硕士) 　　国防科学技术大学（本科）&lt;/li&gt;
+&lt;li&gt;个人简介：&lt;br /&gt;
+从飞思卡尔智能车比赛开始了这个方向的学习，从本科的xs128\K60单片机开始，由嵌入式一步一步走向了SLAM这个方向。前期的工作有点乱，做过各种型号的单片机开发、画过电路板、做过赛灵思zynq7020的开发，甚至还有一段时间，沉浸在焊电路板中乐此不疲，往事不堪回首啊。后来也做过自动驾驶中车道线的识别（LDW）和前置预警（FCW）。研究生期间，主要和多旋翼无人机打交道，有实体机（F550，M100），也有虚拟平台的（AirSim）。SLAM的基础知识很多，自己也在摸索中前进，前期大多使用在无人机平台上，有SVO，也有VIO，后期还有很多地方需要学习。目前主要学习多旋翼无人机的导航与定位算法，有计算机视觉、神经网络理论基础，希望结识更多的同道中人，共同学习和进步。&lt;/li&gt;
 &lt;li&gt;共勉：&lt;br /&gt;
 夫志当存高远，慕先贤，绝情欲，弃凝滞，使庶几之志，揭然有所存，恻然有所感；忍屈伸，去细碎，广咨问，除嫌吝，虽有淹留，何损于美趣，何患于不济。若志不强毅，意不慷慨，徒碌碌滞于俗，默默束于情，永窜伏于凡庸，不免于下流矣。&lt;/li&gt;
 &lt;/ul&gt;
@@ -53,6 +55,203 @@
 &lt;li&gt;&lt;a href=&#34;http://www.aintk.xyz/&#34;&gt;&lt;strong&gt;隔壁老王&lt;/strong&gt;&lt;/a&gt; 　　　&lt;a href=&#34;https://www.drifter.fun/&#34;&gt;&lt;strong&gt;喜提宝马的朱总&lt;/strong&gt;&lt;/a&gt; 　　　&lt;a href=&#34;https://www.bloodbaby.tech/&#34;&gt;&lt;strong&gt;十亩之间&lt;/strong&gt;&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://yihui.name/&#34;&gt;&lt;strong&gt;谢益辉的独立博客&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Median Flow tracker 中值流跟踪</title>
+      <link>https://xlmaverick.me/post/%E4%B8%AD%E5%80%BC%E6%B5%81%E8%B7%9F%E8%B8%AA-medianflow/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E4%B8%AD%E5%80%BC%E6%B5%81%E8%B7%9F%E8%B8%AA-medianflow/</guid>
+      
+        <description>
+
+&lt;h2 id=&#34;median-flow-tracker-中值流跟踪&#34;&gt;Median Flow tracker 中值流跟踪&lt;/h2&gt;
+
+&lt;p&gt;中值流跟踪算法，是属于&lt;code&gt;TLD&lt;/code&gt;跟踪算法中的&lt;code&gt;Tracking&lt;/code&gt;部分。它是基于&lt;code&gt;LK&lt;/code&gt;光流跟踪算法的基础上，使用&lt;code&gt;FB&lt;/code&gt;（正向、反向评估点追踪质量的一种方法）以及NCC交叉验证进行评估反馈。&lt;code&gt;TLD&lt;/code&gt;的跟踪模块在这个基础上增加了失败检测。中值流跟踪方法利用目标框&lt;code&gt;(Bounding box)&lt;/code&gt;来表示被跟踪的目标，并在连续的相邻视频帧之间估计目标的运动。
+当然，相应的算法已经在&lt;code&gt;opencv&lt;/code&gt;的&lt;code&gt;contrib&lt;/code&gt;进行了集成，&lt;a href=&#34;https://github.com/opencv/opencv_contrib/tree/master/modules/tracking/src&#34;&gt;contrib\tracking\src&lt;/a&gt;中，还有其他的相关的跟踪算法，可以选择使用，同时，还有多目标的跟踪函数接口。这里主要记录和理解其中的一个，其余的可以上述的连接中查看。
+具体的流程如下：
+1. 先在选中的&lt;code&gt;box&lt;/code&gt;中均匀采样100个特征点（网格均匀撒点），存于&lt;code&gt;points&lt;/code&gt;中，函数为&lt;code&gt;TLD::bbPoints&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    //将bb切成10*10的网格，将网格交点存在points
+    void TLD::bbPoints(vector&amp;lt;cv::Point2f&amp;gt;&amp;amp; points,const BoundingBox&amp;amp; bb)
+    {
+        int max_pts=10;
+        int margin_h=0;
+        int margin_v=0;
+        int stepx = ceil((bb.width-2*margin_h)/max_pts);//取整
+        int stepy = ceil((bb.height-2*margin_v)/max_pts);
+        for (int y=bb.y+margin_v;y&amp;lt;bb.y+bb.height-margin_v;y+=stepy)
+        {
+            for (int x=bb.x+margin_h;x&amp;lt;bb.x+bb.width-margin_h;x+=stepx)
+            {
+                points.push_back(Point2f(x,y));//最多有11*11=121个点
+            }
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;利用&lt;a href=&#34;https://www.xlmaverick.me/post/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A12-lk/&#34;&gt;金字塔LK光流法&lt;/a&gt;跟踪这些特征点，并预测当前帧的特征点。然后计算&lt;code&gt;FB error&lt;/code&gt;和匹配相似度&lt;code&gt;sim&lt;/code&gt;，然后筛选出&lt;code&gt;FB_error[i] &amp;lt;= median(FB_error)和sim_error[i] &amp;gt; median(sim_error)&lt;/code&gt;的特征点（舍弃跟踪结果不好的特征点），剩下的是不到50%的特征点。上述的三部均在函数&lt;code&gt;tracker.trackf2f(img1, img2, points, points2)&lt;/code&gt;实现。
+&lt;code&gt;
+//points1-&amp;gt;points2，由于调用了filterPts，所以只有通过筛选的point对还保留在points1，points2
+bool LKTracker::trackf2f(const Mat&amp;amp; img1, const Mat&amp;amp; img2,vector&amp;lt;Point2f&amp;gt; &amp;amp;points1, vector&amp;lt;cv::Point2f&amp;gt; &amp;amp;points2)
+{
+    //先利用金字塔LK光流法跟踪预测前向轨迹
+    calcOpticalFlowPyrLK( img1,img2, points1, points2, status, similarity, window_size, level, term_criteria, lambda, 0);
+    //再往回跟踪，产生后向轨迹
+    calcOpticalFlowPyrLK( img2,img1, points2, pointsFB, FB_status,FB_error, window_size, level, term_criteria, lambda, 0);
+    //然后计算 FB-error：前向与 后向 轨迹的误差
+    for( int i= 0; i&amp;lt;points1.size(); ++i )
+    {
+        FB_error[i] = norm(pointsFB[i]-points1[i]);
+    }  
+    //再从前一帧和当前帧图像中（以每个特征点为中心）使用亚象素精度提取10x10象素矩形（使用函数getRectSubPix得到），匹配前一帧和当前帧中提取的10x10象素矩形，得到匹配后的映射图像（调用matchTemplate），得到每一个点的NCC相关系数（也就是相似度大小）。
+    normCrossCorrelation(img1, img2, points1, points2);
+    //然后筛选出 FB_error[i] &amp;lt;= median(FB_error) 和 sim_error[i] &amp;gt; median(sim_error)的特征点（舍弃跟踪结果不好的特征点），剩下的是不到50%的特征点
+    return filterPts(points1, points2);
+}
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;利用剩下的这不到一半的跟踪点输入来预测&lt;code&gt;bounding box&lt;/code&gt;在当前帧的位置和大小，其中&lt;code&gt;points&lt;/code&gt;和&lt;code&gt;points2&lt;/code&gt;是前面筛选完之后的点对，现在要依据&lt;code&gt;points&lt;/code&gt;，&lt;code&gt;points2&lt;/code&gt;来估计&lt;code&gt;bb1&lt;/code&gt;的位移和尺度变化，这两个信息都有了，自然可以决定&lt;code&gt;lastbox&lt;/code&gt;在当前帧的位置&lt;code&gt;tbb&lt;/code&gt;。具体的实现函数如下：
+&lt;code&gt;
+bbPredict(points, points2, lastbox, tbb);
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;跟踪失败检测：如果&lt;code&gt;FB error&lt;/code&gt;的中值大于10个像素（经验值），或者预测到的当前&lt;code&gt;box&lt;/code&gt;的位置移出图像，则认为跟踪错误，此时不返回&lt;code&gt;bounding box&lt;/code&gt;：
+&lt;code&gt;
+if (tracker.getFB()&amp;gt;10 || tbb.x&amp;gt;img2.cols ||  tbb.y&amp;gt;img2.rows || tbb.br().x &amp;lt; 1 || tbb.br().y &amp;lt;1)
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;归一化&lt;code&gt;img2(bb)&lt;/code&gt;对应的&lt;code&gt;patch&lt;/code&gt;的&lt;code&gt;size&lt;/code&gt;（放缩至&lt;code&gt;patch_size = 15*15&lt;/code&gt;），存入&lt;code&gt;pattern&lt;/code&gt;：
+&lt;code&gt;
+getPattern(img2(bb),pattern,mean,stdev);
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;计算图像片&lt;code&gt;pattern&lt;/code&gt;到在线模型&lt;code&gt;M&lt;/code&gt;的保守相似度：
+&lt;code&gt;
+classifier.NNConf(pattern,isin,dummy,tconf);
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;如果保守相似度大于阈值，则评估本次跟踪有效，否则跟踪无效：
+&lt;code&gt;
+if (tconf&amp;gt;classifier.thr_nn_valid) tvalid =true;
+&lt;/code&gt;
+后面5,6,7对应的详细的代码为：
+&lt;code&gt;
+Mat pattern;
+Scalar mean, stdev;
+BoundingBox bb;
+bb.x = max(tbb.x,0);
+bb.y = max(tbb.y,0);
+bb.width = min(min(img2.cols-tbb.x,tbb.width),min(tbb.width,tbb.br().x));
+// bb.height = min(min(img2.rows-tbb.y,tbb.height),min(tbb.height,tbb.br().y));
+getPattern(img2(bb),pattern,mean,stdev);
+vector&amp;lt;int&amp;gt; isin;
+float dummy;
+classifier.NNConf(pattern,isin,dummy,tconf); //1.tconf是用Conservative Similarity
+tvalid = lastvalid; 
+if (tconf&amp;gt;classifier.thr_nn_valid){//thr_nn_valid
+tvalid =true;//2.判定轨迹是否有效，从而决定是否要增加正样本，标志位tvalid
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>基于消失点的相机俯仰角和偏航角的更新方法</title>
+      <link>https://xlmaverick.me/post/%E5%9F%BA%E4%BA%8E%E6%B6%88%E5%A4%B1%E7%82%B9%E7%9A%84%E7%9B%B8%E6%9C%BA%E4%BF%AF%E4%BB%B0%E8%A7%92%E5%92%8C%E5%81%8F%E8%88%AA%E8%A7%92%E5%A4%96%E5%8F%82%E6%9B%B4%E6%96%B0/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E5%9F%BA%E4%BA%8E%E6%B6%88%E5%A4%B1%E7%82%B9%E7%9A%84%E7%9B%B8%E6%9C%BA%E4%BF%AF%E4%BB%B0%E8%A7%92%E5%92%8C%E5%81%8F%E8%88%AA%E8%A7%92%E5%A4%96%E5%8F%82%E6%9B%B4%E6%96%B0/</guid>
+      
+        <description>
+
+&lt;h2 id=&#34;基于消失点的相机俯仰角和偏航角的更新方法&#34;&gt;基于消失点的相机俯仰角和偏航角的更新方法&lt;/h2&gt;
+
+&lt;p&gt;首先需要说明的有三点：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;针对车载的情况下，外参特指相机的俯仰角和偏航角。由于车载条件下，相机的高度等是固定的，我们做了相应的条件约束。&lt;/li&gt;
+&lt;li&gt;在辅助驾驶中，车道线的识别是首要的前提条件，所以更新的算法是基于车道线检测的结果。&lt;/li&gt;
+&lt;li&gt;默认使用的图片是已经解畸变的图片，在计算的过程中没有考虑畸变模型。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;具体的方法如下:&lt;/p&gt;
+
+&lt;div align=center&gt;
+&lt;img src=&#34;../images/基于消失点的俯仰角和偏航角更新/image1.jpg&#34;&gt;
+&lt;/div&gt;
+
+&lt;p&gt;如图所示建立图像坐标系$cr$，摄像机坐标系空间直角坐标系$x_c、y_c、z_c$和世界坐标系$x_w、y_w、z_w$。根据内外参矩阵可知图像坐标系和世界坐标系坐标的转换关系，其中外参只考虑了俯仰角和偏航角。&lt;/p&gt;
+
+&lt;p&gt;
+$$
+\alpha\left[\begin{array}{l}{c} \\ {r} \\ {1}\end{array}\right]=H_{3 \times 4}\left[\begin{array}{l}{x_{w}} \\ {y_{w}} \\ {z_{w}} \\ {1}\end{array}\right]
+\tag{1}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;
+$$
+H_{3 \times 4}=\left[\begin{array}{ccc}{k_{1}} &amp; {0} &amp; {k_{2}} \\ {0} &amp; {k_{3}} &amp; {k_{4}} \\ {0} &amp; {0} &amp; {1}\end{array}\right]\left[\begin{array}{cccc}{\cos \beta} &amp; {-\sin \beta} &amp; {0} &amp; {t_{1}} \\ {\cos \alpha \sin \beta} &amp; {\cos \alpha \cos \beta} &amp; {-\sin \alpha} &amp; {t_{2}} \\ {\sin \alpha \sin \beta} &amp; {\sin \alpha \cos \beta} &amp; {\cos \alpha} &amp; {t_{3}}\end{array}\right]
+$$
+&lt;/p&gt;
+
+&lt;p&gt;令$z_w = 0$化简得到:&lt;/p&gt;
+
+&lt;p&gt;
+$$
+\left[\begin{array}{ll}{H(3,1) c-H(1,1)} &amp; {H(3,2) c-H(1,2)} \\ {H(3,1) r-H(2,1)} &amp; {H(3,2) r-H(1,2)}\end{array}\right]\left[\begin{array}{l}{x_{w}} \\ {y_{w}}\end{array}\right]=\left[\begin{array}{c}{H(1,4)-H(3,4) c} \\ {H(2,4)-H(3,4) r}\end{array}\right]
+\tag{2}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;
+$$
+\begin{array}{l}{\left[c \sin \alpha \sin \beta-\left(k_{1} \cos \beta+k_{2} \sin \alpha \sin \beta\right)\right] x_{w}+} \\ {\left[c \sin \alpha \cos \beta-\left(-k_{1} \sin \beta+k_{2} \sin \alpha \cos \beta\right)\right] y_{w}=k_{1} t_{1}+k_{2} t_{3}-t_{3} c}\end{array}
+\tag{3}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;
+$$
+\begin{array}{l}{\left[r \sin \alpha \sin \beta-\left(k_{3} \cos \alpha \sin \beta+k_{4} \sin \alpha \sin \beta\right)\right] x_{w}+} \\ {\left[r \sin \alpha \cos \beta-\left(k_{3} \cos \alpha \cos \beta+k_{4} \sin \alpha \cos \beta\right)\right] y_{w}=k_{3} t_{2}+k_{4} t_{3}-t_{3} r}\end{array}
+\tag{4}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;等式（3）（4）右侧为有限数，所以当$x_w = 0、y_w \rightarrow \infty$时，&lt;/p&gt;
+
+&lt;p&gt;
+$$
+c_{\mathrm{vp}} \sin \alpha \cos \beta-\left(-k_{1} \sin \beta+k_{2} \sin \alpha \cos \beta\right)=0
+\tag{5}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;
+$$
+r_{v p} \sin \alpha \cos \beta-\left(k_{3} \cos \alpha \cos \beta+k_{4} \sin \alpha \cos \beta\right)=0
+\tag{6}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;所以&lt;/p&gt;
+
+&lt;p&gt;
+$$
+\alpha=\operatorname{atan}\left(\frac{k_{3}}{r_{i p p}-k_{4}}\right)
+\tag{7}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;
+$$
+\beta=\operatorname{atan}\left(\frac{\left(k_{2}-c_{v p}\right) \sin \alpha}{k_{1}}\right)
+\tag{8}
+$$
+&lt;/p&gt;
+
+&lt;p&gt;在车道线检测中消失点的坐标是根据直线检测结果不断更新的，由公式（7）（8），根据更新更新的消失点坐标和相机内参数，可以计算出俯仰角和偏航角，从而对外参矩阵进行更新。&lt;/p&gt;
 </description>
       
     </item>
