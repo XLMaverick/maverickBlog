@@ -35,7 +35,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "博客"
+  name = "全部文章"
   weight = 20
   identifier = "archives"
   url = "/post/"
@@ -58,14 +58,14 @@ defaultContentLanguage = "zh-cn"           # Default language to use
 [params]
   since = "2018"            # Site creation time          # 站点建立时间
   homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
-  rssFullContent = true     # if false, Rss feed instead of the summary
+  rssFullContent = false     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "XLMaverick"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Hugo", "theme","jane"]
   description = "Hugo theme jane example site."
 
-  archive-paginate = 30
+  archive-paginate = 80
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
@@ -85,7 +85,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
 
 
   [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
-    enable = true
+    enable = false
 
   [params.counter.leancloud]  # Chinese leancloud visitor counter  # leancloud 计数器
     enable = true
