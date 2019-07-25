@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Yang" />
-  <meta name="description" content="git 提交github后文件夹为灰颜色问题 因为使用git clone 之后，文件夹里面会包含原来相关的信息，所以重新push之后会显示灰颜色。解决方案： * 删" />
+  <meta name="description" content="一、git提交github的命令顺序 git add 要提交文件夹的名称，将文件添加到跟踪列表，git add .提交所有文件； 输入git commit -m &amp;quot;提交信息" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -58,7 +58,7 @@
 
 
 <meta property="og:title" content="github的问题" />
-<meta property="og:description" content="git 提交github后文件夹为灰颜色问题 因为使用git clone 之后，文件夹里面会包含原来相关的信息，所以重新push之后会显示灰颜色。解决方案： * 删" />
+<meta property="og:description" content="一、git提交github的命令顺序 git add 要提交文件夹的名称，将文件添加到跟踪列表，git add .提交所有文件； 输入git commit -m &quot;提交信息" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/" />
 
@@ -79,19 +79,19 @@
 
 
 <meta itemprop="name" content="github的问题">
-<meta itemprop="description" content="git 提交github后文件夹为灰颜色问题 因为使用git clone 之后，文件夹里面会包含原来相关的信息，所以重新push之后会显示灰颜色。解决方案： * 删">
+<meta itemprop="description" content="一、git提交github的命令顺序 git add 要提交文件夹的名称，将文件添加到跟踪列表，git add .提交所有文件； 输入git commit -m &quot;提交信息">
 
 
 <meta itemprop="datePublished" content="2018-09-13T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-09-13T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="357">
+<meta itemprop="wordCount" content="993">
 
 
 
 <meta itemprop="keywords" content="git," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="github的问题"/>
-<meta name="twitter:description" content="git 提交github后文件夹为灰颜色问题 因为使用git clone 之后，文件夹里面会包含原来相关的信息，所以重新push之后会显示灰颜色。解决方案： * 删"/>
+<meta name="twitter:description" content="一、git提交github的命令顺序 git add 要提交文件夹的名称，将文件添加到跟踪列表，git add .提交所有文件； 输入git commit -m &quot;提交信息"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -372,28 +372,97 @@ code.has-jax {
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#一-git提交github的命令顺序">一、git提交github的命令顺序</a></li>
+<li><a href="#二-git-提交github后文件夹为灰颜色问题">二、git 提交github后文件夹为灰颜色问题</a></li>
+<li><a href="#三-git提交空文件夹">三、git提交空文件夹</a></li>
+<li><a href="#四-push-每次需要输入用户名和密码的问题">四、push 每次需要输入用户名和密码的问题</a></li>
+<li><a href="#五-更新远程仓库代码到本地">五、更新远程仓库代码到本地</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      <ul>
-<li><p>git 提交github后文件夹为灰颜色问题<br />
-因为使用git clone 之后，文件夹里面会包含原来相关的信息，所以重新push之后会显示灰颜色。解决方案：<br />
-* 删除clone的代码里面的.git和.gitignore文件，重新push。<br />
-* 若上述方法无效时，是因为已经有了缓存，需要先将缓存删除<br />
-git rm -r &ndash;cached some-directory</p></li>
+      
 
-<li><p>git提交空文件夹<br />
-在空目录下创建.gitkeep文件。</p></li>
+<h3 id="一-git提交github的命令顺序">一、git提交github的命令顺序</h3>
 
-<li><p>push 每次需要输入用户名和密码的问题<br />
-每次都需要输入用户名和密码是因为你采用的是 https 方式提交代码， 如果采用的是 ssh 方式只需要在版本库中添加用户的 sha 的key就可以实现提交时无需输入用户名和密码。<br />
-可以在更改配置HTTPS地址为SSH地址，当然也可以通过设置git的cache，可以让它记住密码，之后自己设置一个cache有效时间 这样也一定程度保证了一些安全性，具体代码如下<br />
-git config &ndash;global credential.helper cache<br />
-git config &ndash;global credential.helper &lsquo;cache &ndash;timeout=3600&rsquo;</p></li>
-</ul>
+<ol>
+<li><code>git add</code> 要提交文件夹的名称，将文件添加到跟踪列表，<code>git add .</code>提交所有文件；</li>
+<li>输入<code>git commit -m &quot;提交信息&quot;</code>，将文件提交到本地仓库，提交信息必须填写；</li>
+<li>输入<code>git remote add origin github代码仓库的url地址</code>，将代码仓库与<code>github</code>关联；</li>
+<li>输入<code>git pull origin master</code>，将远程代码仓库拉回到本地，第一次提交可以不加，但以后提交时要加，否则代码可能会杂糅在一起;</li>
+<li>输入<code>git push  -u origin master</code>，将代码提交到<code>github</code>，输入回车后需要输入你的<code>github</code>名称和密码。</li>
+</ol>
+
+<h3 id="二-git-提交github后文件夹为灰颜色问题">二、git 提交github后文件夹为灰颜色问题</h3>
+
+<p>因为使用<code>git clone</code>之后，文件夹里面会包含原来相关的信息，所以重新<code>push</code>之后会显示灰颜色。解决方案：<br />
+* 删除<code>clone</code>的代码里面的<code>.git</code>和<code>.gitignore</code>文件，重新<code>push</code>；
+* 若上述方法无效时，是因为已经有了缓存，需要先将缓存删除<code>git rm -r --cached some-directory</code>。</p>
+
+<h3 id="三-git提交空文件夹">三、git提交空文件夹</h3>
+
+<p>在空目录下创建<code>.gitkeep</code>文件。</p>
+
+<h3 id="四-push-每次需要输入用户名和密码的问题">四、push 每次需要输入用户名和密码的问题</h3>
+
+<p>每次都需要输入用户名和密码是因为你采用的是<code>https</code>方式提交代码， 如果采用的是<code>ssh</code>方式只需要在版本库中添加用户的<code>sha</code>的<code>key</code>就可以实现提交时无需输入用户名和密码。<br />
+可以在更改配置<code>HTTPS</code>地址为<code>SSH</code>地址，当然也可以通过设置<code>git</code>的<code>cache</code>，可以让它记住密码，之后自己设置一个<code>cache</code>有效时间 这样也一定程度保证了一些安全性，具体代码如下</p>
+
+<pre><code>git config --global credential.helper cache  
+git config --global credential.helper 'cache --timeout=3600' 
+</code></pre>
+
+<h3 id="五-更新远程仓库代码到本地">五、更新远程仓库代码到本地</h3>
+
+<ol>
+<li>查看远程分支
+使用如下命令可以查看远程仓库（我这里有一个origin仓库）
+<code>
+$ git remote -v
+origin  git@github.com:username/Animations.git (fetch)
+origin  git@github.com:username/Animations.git (push)
+</code></li>
+
+<li><p>从远程获取最新版本到本地
+使用如下命令可以在本地新建一个<code>temp</code>分支，并将远程<code>origin</code>仓库的<code>master</code>分支代码下载到本地<code>temp</code>分支</p>
+
+<pre><code>$ git fetch origin master:temp
+</code></pre></li>
+
+<li><p>比较本地仓库与下载的<code>temp</code>分支
+使用如下命令来比较本地代码与刚刚从远程下载下来的代码的区别，这里可以配置一个图形化比较工具来可视化。</p>
+
+<pre><code>$ git diff temp
+</code></pre></li>
+
+<li><p>合并<code>temp</code>分支到本地的<code>master</code>分支
+对比区别之后，如果觉得没有问题，可以使用如下命令进行代码合并：</p>
+
+<pre><code>$ git merge temp
+</code></pre></li>
+
+<li><p>删除<code>temp</code>分支
+如果<code>temp</code>分支不想要保留，可以使用如下命令删除该分支：</p>
+
+<pre><code>$ git branch -d temp
+</code></pre>
+
+<p>如果该分支的代码之前没有<code>merge</code>到本地，那么删除该分支会报错，可以使用一下命令强制删除该分支。</p>
+
+<pre><code>Git branch -D temp
+</code></pre></li>
+</ol>
 
     </div>
 

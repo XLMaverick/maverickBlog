@@ -2397,22 +2397,77 @@ make&lt;br /&gt;
       
       <guid>https://xlmaverick.me/post/github%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
       
-        <description>&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;git 提交github后文件夹为灰颜色问题&lt;br /&gt;
-因为使用git clone 之后，文件夹里面会包含原来相关的信息，所以重新push之后会显示灰颜色。解决方案：&lt;br /&gt;
-* 删除clone的代码里面的.git和.gitignore文件，重新push。&lt;br /&gt;
-* 若上述方法无效时，是因为已经有了缓存，需要先将缓存删除&lt;br /&gt;
-git rm -r &amp;ndash;cached some-directory&lt;/p&gt;&lt;/li&gt;
+        <description>
 
-&lt;li&gt;&lt;p&gt;git提交空文件夹&lt;br /&gt;
-在空目录下创建.gitkeep文件。&lt;/p&gt;&lt;/li&gt;
+&lt;h3 id=&#34;一-git提交github的命令顺序&#34;&gt;一、git提交github的命令顺序&lt;/h3&gt;
 
-&lt;li&gt;&lt;p&gt;push 每次需要输入用户名和密码的问题&lt;br /&gt;
-每次都需要输入用户名和密码是因为你采用的是 https 方式提交代码， 如果采用的是 ssh 方式只需要在版本库中添加用户的 sha 的key就可以实现提交时无需输入用户名和密码。&lt;br /&gt;
-可以在更改配置HTTPS地址为SSH地址，当然也可以通过设置git的cache，可以让它记住密码，之后自己设置一个cache有效时间 这样也一定程度保证了一些安全性，具体代码如下&lt;br /&gt;
-git config &amp;ndash;global credential.helper cache&lt;br /&gt;
-git config &amp;ndash;global credential.helper &amp;lsquo;cache &amp;ndash;timeout=3600&amp;rsquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git add&lt;/code&gt; 要提交文件夹的名称，将文件添加到跟踪列表，&lt;code&gt;git add .&lt;/code&gt;提交所有文件；&lt;/li&gt;
+&lt;li&gt;输入&lt;code&gt;git commit -m &amp;quot;提交信息&amp;quot;&lt;/code&gt;，将文件提交到本地仓库，提交信息必须填写；&lt;/li&gt;
+&lt;li&gt;输入&lt;code&gt;git remote add origin github代码仓库的url地址&lt;/code&gt;，将代码仓库与&lt;code&gt;github&lt;/code&gt;关联；&lt;/li&gt;
+&lt;li&gt;输入&lt;code&gt;git pull origin master&lt;/code&gt;，将远程代码仓库拉回到本地，第一次提交可以不加，但以后提交时要加，否则代码可能会杂糅在一起;&lt;/li&gt;
+&lt;li&gt;输入&lt;code&gt;git push  -u origin master&lt;/code&gt;，将代码提交到&lt;code&gt;github&lt;/code&gt;，输入回车后需要输入你的&lt;code&gt;github&lt;/code&gt;名称和密码。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;二-git-提交github后文件夹为灰颜色问题&#34;&gt;二、git 提交github后文件夹为灰颜色问题&lt;/h3&gt;
+
+&lt;p&gt;因为使用&lt;code&gt;git clone&lt;/code&gt;之后，文件夹里面会包含原来相关的信息，所以重新&lt;code&gt;push&lt;/code&gt;之后会显示灰颜色。解决方案：&lt;br /&gt;
+* 删除&lt;code&gt;clone&lt;/code&gt;的代码里面的&lt;code&gt;.git&lt;/code&gt;和&lt;code&gt;.gitignore&lt;/code&gt;文件，重新&lt;code&gt;push&lt;/code&gt;；
+* 若上述方法无效时，是因为已经有了缓存，需要先将缓存删除&lt;code&gt;git rm -r --cached some-directory&lt;/code&gt;。&lt;/p&gt;
+
+&lt;h3 id=&#34;三-git提交空文件夹&#34;&gt;三、git提交空文件夹&lt;/h3&gt;
+
+&lt;p&gt;在空目录下创建&lt;code&gt;.gitkeep&lt;/code&gt;文件。&lt;/p&gt;
+
+&lt;h3 id=&#34;四-push-每次需要输入用户名和密码的问题&#34;&gt;四、push 每次需要输入用户名和密码的问题&lt;/h3&gt;
+
+&lt;p&gt;每次都需要输入用户名和密码是因为你采用的是&lt;code&gt;https&lt;/code&gt;方式提交代码， 如果采用的是&lt;code&gt;ssh&lt;/code&gt;方式只需要在版本库中添加用户的&lt;code&gt;sha&lt;/code&gt;的&lt;code&gt;key&lt;/code&gt;就可以实现提交时无需输入用户名和密码。&lt;br /&gt;
+可以在更改配置&lt;code&gt;HTTPS&lt;/code&gt;地址为&lt;code&gt;SSH&lt;/code&gt;地址，当然也可以通过设置&lt;code&gt;git&lt;/code&gt;的&lt;code&gt;cache&lt;/code&gt;，可以让它记住密码，之后自己设置一个&lt;code&gt;cache&lt;/code&gt;有效时间 这样也一定程度保证了一些安全性，具体代码如下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git config --global credential.helper cache  
+git config --global credential.helper &#39;cache --timeout=3600&#39; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;五-更新远程仓库代码到本地&#34;&gt;五、更新远程仓库代码到本地&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;查看远程分支
+使用如下命令可以查看远程仓库（我这里有一个origin仓库）
+&lt;code&gt;
+$ git remote -v
+origin  git@github.com:username/Animations.git (fetch)
+origin  git@github.com:username/Animations.git (push)
+&lt;/code&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;从远程获取最新版本到本地
+使用如下命令可以在本地新建一个&lt;code&gt;temp&lt;/code&gt;分支，并将远程&lt;code&gt;origin&lt;/code&gt;仓库的&lt;code&gt;master&lt;/code&gt;分支代码下载到本地&lt;code&gt;temp&lt;/code&gt;分支&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git fetch origin master:temp
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;比较本地仓库与下载的&lt;code&gt;temp&lt;/code&gt;分支
+使用如下命令来比较本地代码与刚刚从远程下载下来的代码的区别，这里可以配置一个图形化比较工具来可视化。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git diff temp
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;合并&lt;code&gt;temp&lt;/code&gt;分支到本地的&lt;code&gt;master&lt;/code&gt;分支
+对比区别之后，如果觉得没有问题，可以使用如下命令进行代码合并：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git merge temp
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;删除&lt;code&gt;temp&lt;/code&gt;分支
+如果&lt;code&gt;temp&lt;/code&gt;分支不想要保留，可以使用如下命令删除该分支：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git branch -d temp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果该分支的代码之前没有&lt;code&gt;merge&lt;/code&gt;到本地，那么删除该分支会报错，可以使用一下命令强制删除该分支。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Git branch -D temp
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
       
     </item>
