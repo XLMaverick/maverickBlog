@@ -205,14 +205,14 @@
   </url>
   
   <url>
-    <loc>https://xlmaverick.me/tags/cv/</loc>
+    <loc>https://xlmaverick.me/categories/cv/</loc>
     <lastmod>2019-07-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xlmaverick.me/categories/cv/</loc>
+    <loc>https://xlmaverick.me/tags/cv/</loc>
     <lastmod>2019-07-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -240,15 +240,15 @@
   </url>
   
   <url>
-    <loc>https://xlmaverick.me/tags/slam/</loc>
-    <lastmod>2019-08-08T00:00:00+00:00</lastmod>
+    <loc>https://xlmaverick.me/categories/slam/</loc>
+    <lastmod>2019-07-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xlmaverick.me/categories/slam/</loc>
-    <lastmod>2019-07-09T00:00:00+00:00</lastmod>
+    <loc>https://xlmaverick.me/tags/slam/</loc>
+    <lastmod>2019-08-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -268,14 +268,14 @@
   </url>
   
   <url>
-    <loc>https://xlmaverick.me/tags/vio/</loc>
+    <loc>https://xlmaverick.me/categories/vio/</loc>
     <lastmod>2019-08-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xlmaverick.me/categories/vio/</loc>
+    <loc>https://xlmaverick.me/tags/vio/</loc>
     <lastmod>2019-08-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
