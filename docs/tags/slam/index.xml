@@ -6,10 +6,46 @@
     <description>Recent content in Slam on XLMaverick - garabatear of yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xlmaverick.me/tags/slam/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vins系统的构建</title>
+      <link>https://xlmaverick.me/post/vins%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%9E%84%E5%BB%BA/</link>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/vins%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%9E%84%E5%BB%BA/</guid>
+      <description>vins系统的构建 将第二讲中仿真数据集（视觉特征，imu数据）接入自己的VINS代码，并运行出轨迹结果。 仿真数据集无噪声 仿真数据集有噪声（不</description>
+    </item>
+    
+    <item>
+      <title>视觉前端</title>
+      <link>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E5%89%8D%E7%AB%AF/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E5%89%8D%E7%AB%AF/</guid>
+      <description>习题一：基础题-证明题 证明 $$ \mathbf{D}^{\top} \mathbf{D}=\sum_{i=1}^{4} \sigma_{i}^{2} \mathbf{u}_{i} \mathbf{u}_{j}^{\top} $$ 式子中$\mathbf{y} = \mathbf{u}_ {4}$ 是该问题的最优解。提示：设 $\mathbf{y}^{\prime}=\mathbf{u}_ {4}+\mathbf{v}$，其中$</description>
+    </item>
+    
+    <item>
+      <title>滑动窗口算法实践</title>
+      <link>https://xlmaverick.me/post/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95%E5%AE%9E%E8%B7%B5/</guid>
+      <description>习题一：基础题-代码编写 1、完成单目Bundle Adjustment求解器problem.cc中的部分代码。 完成Problem::MakeH</description>
+    </item>
+    
+    <item>
+      <title>基于滑动窗口的VIO系统-可观性和一致性</title>
+      <link>https://xlmaverick.me/post/%E5%9F%BA%E4%BA%8E%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95%E7%9A%84vio%E7%B3%BB%E7%BB%9F-%E5%8F%AF%E8%A7%82%E6%80%A7%E5%92%8C%E4%B8%80%E8%87%B4%E6%80%A7/</link>
+      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E5%9F%BA%E4%BA%8E%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95%E7%9A%84vio%E7%B3%BB%E7%BB%9F-%E5%8F%AF%E8%A7%82%E6%80%A7%E5%92%8C%E4%B8%80%E8%87%B4%E6%80%A7/</guid>
+      <description>习题一：信息矩阵的绘制 某时刻，SLAM系统中相机和路标点的观测关系如下图所示，其中 $\xi$ 表示相机的位姿，$L$ 表示观测到的路标点。当路标点 $L$ 表示</description>
+    </item>
     
     <item>
       <title>基于消失点的相机俯仰角和偏航角的更新方法</title>
@@ -18,6 +54,33 @@
       
       <guid>https://xlmaverick.me/post/%E5%9F%BA%E4%BA%8E%E6%B6%88%E5%A4%B1%E7%82%B9%E7%9A%84%E7%9B%B8%E6%9C%BA%E4%BF%AF%E4%BB%B0%E8%A7%92%E5%92%8C%E5%81%8F%E8%88%AA%E8%A7%92%E5%A4%96%E5%8F%82%E6%9B%B4%E6%96%B0/</guid>
       <description>基于消失点的相机俯仰角和偏航角的更新方法 首先需要说明的有三点： 针对车载的情况下，外参特指相机的俯仰角和偏航角。由于车载条件下，相机的高度等是</description>
+    </item>
+    
+    <item>
+      <title>基于优化的IMU预积分与视觉信息融合</title>
+      <link>https://xlmaverick.me/post/%E5%9F%BA%E4%BA%8E%E4%BC%98%E5%8C%96%E7%9A%84imu%E9%A2%84%E7%A7%AF%E5%88%86%E4%B8%8E%E8%A7%86%E8%A7%89%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E5%9F%BA%E4%BA%8E%E4%BC%98%E5%8C%96%E7%9A%84imu%E9%A2%84%E7%A7%AF%E5%88%86%E4%B8%8E%E8%A7%86%E8%A7%89%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88/</guid>
+      <description>习题一：LM优化算法 样例代码给出了使用LM算法来估计曲线 $y = exp(ax 2 + bx + c)$ 参数 $a, b, c$ 的完整过程。 请绘制样例代码中LM阻尼因子μ随着迭代变化的曲</description>
+    </item>
+    
+    <item>
+      <title>IMU传感器</title>
+      <link>https://xlmaverick.me/post/imu%E4%BC%A0%E6%84%9F%E5%99%A8/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/imu%E4%BC%A0%E6%84%9F%E5%99%A8/</guid>
+      <description>习题一：IMU仿真数据 1、设置IMU仿真代码中的不同参数，生成Allan方差的标定曲线。其中Allan方差工具： https://github.com/gaowenliang/imu_utils https://github.com/rpng/kalibr_allan 2、将IMU仿真代码中的</description>
+    </item>
+    
+    <item>
+      <title>VIO概述与基本知识</title>
+      <link>https://xlmaverick.me/post/vio%E6%A6%82%E8%BF%B0%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/vio%E6%A6%82%E8%BF%B0%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</guid>
+      <description>习题一：VIO 文献阅读 阅读VIO相关综述文献，回答以下问题： 视觉与IMU进行融合之后有何优势？ 有哪些常见的视觉+IMU融合方案？有没有工业界</description>
     </item>
     
     <item>
@@ -99,6 +162,15 @@
       
       <guid>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</guid>
       <description>背景 本学期，由于邹老师开设视觉定位的课程，我们组的大部分人基本每节课都在听，本次课程邹老师总共会设置六次大作业，应该难度不会很大。既然来上课</description>
+    </item>
+    
+    <item>
+      <title>相机模型与标定</title>
+      <link>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</guid>
+      <description>由于近期使用了很多种不同的相机，关于相机的模型和标定方法也是老生常谈的问题，这也是视觉定位的必要前提，本文只要分为三个部分：坐标系的转换、相</description>
     </item>
     
   </channel>

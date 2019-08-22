@@ -4,8 +4,8 @@ title: "视觉里程计2-LK"           # 标题
 date: 2019-05-16    # 创建时间
 lastmod: 2019-05-20 # 最后修改时间
 draft: false                       # 是否是草稿？
-tags: ["slam","十四讲"]  # 标签
-categories: ["slam"]              # 分类
+tags: ["SLAM","十四讲"]  # 标签
+categories: ["SLAM十四讲"]              # 分类
 author: "Yang"                  # 作者
 
 # 用户自定义

@@ -21,84 +21,21 @@
     </item>
     
     <item>
-      <title>视觉里程计2</title>
-      <link>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A12/</link>
-      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A12/</guid>
-      <description>视觉里程计2 习题二：直接法 2.1 单层直接法 我们说直接法是光流的直观拓展。在光流中，我们估计的是每个像素的平移(在additive的情况下)。而在</description>
-    </item>
-    
-    <item>
-      <title>视觉里程计2-LK</title>
-      <link>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A12-lk/</link>
-      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A12-lk/</guid>
-      <description>视觉里程计2 习题一：LK光流法 1.1 光流文献综述 我们课上演示了Lucas-Kanade稀疏光流，用OpenCV函数实现了光流法追踪特征点。实际上</description>
-    </item>
-    
-    <item>
-      <title>视觉里程计1</title>
-      <link>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11/</link>
-      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11/</guid>
-      <description>视觉里程计1 习题二：从E恢复R，t 我们在书中讲到了单目对极几何部分，可以通过本质矩阵E，得到旋转和平移R，t，但那时直接使用了OpenCV提</description>
-    </item>
-    
-    <item>
-      <title>视觉里程计1-ORB</title>
-      <link>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11-orb/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xlmaverick.me/post/-%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A11-orb/</guid>
-      <description>视觉里程计1 习题一：ORB特征点 ORB(Oriented FAST and BRIEF)特征是SLAM中一种很常用的特征,由于其二进制特性,使得它可以非常快速地提取与计算。下面,</description>
-    </item>
-    
-    <item>
-      <title>非线性优化</title>
-      <link>https://xlmaverick.me/post/%E9%9D%9E%E7%BA%BF%E6%80%A7%E4%BC%98%E5%8C%96/</link>
-      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xlmaverick.me/post/%E9%9D%9E%E7%BA%BF%E6%80%A7%E4%BC%98%E5%8C%96/</guid>
-      <description>非线性优化 习题一：矩阵微分 在优化中经常会遇到矩阵微分的问题。例如,当自变量为向量$x$,求标量函数$u(x)$对$x$的导数时,即为矩阵微分</description>
-    </item>
-    
-    <item>
-      <title>相机与图像</title>
-      <link>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E4%B8%8E%E5%9B%BE%E5%83%8F/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E4%B8%8E%E5%9B%BE%E5%83%8F/</guid>
-      <description>相机与图像 习题一：图像去畸变 现实生活中的图像总存在畸变。原则上来说,针孔透视相机应该将三维世界中的直线投影成直线,但是当我们使用广角和鱼眼镜</description>
-    </item>
-    
-    <item>
-      <title>李群与李代数</title>
-      <link>https://xlmaverick.me/post/%E6%9D%8E%E7%BE%A4%E4%B8%8E%E6%9D%8E%E4%BB%A3%E6%95%B0/</link>
-      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xlmaverick.me/post/%E6%9D%8E%E7%BE%A4%E4%B8%8E%E6%9D%8E%E4%BB%A3%E6%95%B0/</guid>
-      <description>李群与李代数 习题一：群的性质 课上我们讲解了什么是群。请根据群定义，求解以下问题： $ \lbrace Z,+ \rbrace$ 是否为群？若是。验证其满足群定义；若不是，说明理由。</description>
-    </item>
-    
-    <item>
-      <title>三维空间中的刚体运动</title>
-      <link>https://xlmaverick.me/post/%E4%B8%89%E7%BB%B4%E7%A9%BA%E9%97%B4%E7%9A%84%E5%88%9A%E4%BD%93%E8%BF%90%E5%8A%A8/</link>
-      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xlmaverick.me/post/%E4%B8%89%E7%BB%B4%E7%A9%BA%E9%97%B4%E7%9A%84%E5%88%9A%E4%BD%93%E8%BF%90%E5%8A%A8/</guid>
-      <description>三维空间中的刚体运动 习题一：Eigen矩阵运算 设线性方程组$Ax=b$，在$A$为方阵的前提下，回答以下问题： 1、在什么条件下，$x$有解且</description>
-    </item>
-    
-    <item>
       <title>视觉作业-1</title>
       <link>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://xlmaverick.me/post/%E8%A7%86%E8%A7%89%E4%BD%9C%E4%B8%9A-1/</guid>
       <description>背景 本学期，由于邹老师开设视觉定位的课程，我们组的大部分人基本每节课都在听，本次课程邹老师总共会设置六次大作业，应该难度不会很大。既然来上课</description>
+    </item>
+    
+    <item>
+      <title>相机模型与标定</title>
+      <link>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlmaverick.me/post/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%A0%87%E5%AE%9A/</guid>
+      <description>由于近期使用了很多种不同的相机，关于相机的模型和标定方法也是老生常谈的问题，这也是视觉定位的必要前提，本文只要分为三个部分：坐标系的转换、相</description>
     </item>
     
   </channel>

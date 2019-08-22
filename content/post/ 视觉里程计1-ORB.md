@@ -1,12 +1,12 @@
 ---
 # 常用定义
 title: "视觉里程计1-ORB"           # 标题
-date: 2019-05-06    # 创建时间
-lastmod: 2019-05-08 # 最后修改时间
-draft: false                       # 是否是草稿？
-tags: ["slam","十四讲"]  # 标签
-categories: ["slam"]              # 分类
-author: "Yang"                  # 作者
+date: 2019-05-06                 # 创建时间
+lastmod: 2019-05-08              # 最后修改时间
+draft: false                     # 是否是草稿？
+tags: ["SLAM","十四讲"]           # 标签
+categories: ["SLAM十四讲"]            # 分类
+author: "Yang"                   # 作者
 
 # 用户自定义
 # 你可以选择 关闭(false) 或者 打开(true) 以下选项
